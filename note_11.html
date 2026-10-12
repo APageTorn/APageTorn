@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Import the fonts from the Google Fonts CDN -->
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Architects+Daughter&family=Kalam:wght@400;700&family=Patrick+Hand&display=swap"
+          rel="stylesheet">
+
+    <title>User Manual: Notes from within the Structure</title>
+    <style>
+    body {
+      font-family: 'Patrick Hand', 'Architects Daughter', cursive;
+      line-height: 1.6;
+      color: #2b2b2b;
+      background-color: #F4EBE1;
+      margin: 0;
+      padding: 20px;
+    }
+    nav {
+      padding: 15px 20px;
+      text-align: center;
+      border-bottom: 1px solid #2d2640;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      margin: -20px -20px 30px -20px;
+    }
+    nav a {
+      color: #0f0d17;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 600;
+    }
+    nav a:hover {
+      color: #b794f4; /* Lavender hover */
+    }
+    .entry-container {
+      max-width: 850px;
+      margin: 0 auto;
+      background-color: #F4EBE1;
+      border: 1px solid #2d2640;
+      border-radius: 8px;
+      padding: 30px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    }
+    .notebook-header {
+      border-bottom: 2px dashed #8c7a6b;
+      padding-bottom: 12px;
+      margin-bottom: 25px;
+    }
+    .handwritten-note {
+      font-family: 'Kalam', cursive;
+      font-weight: 700;
+      color: #6b46c1;
+      font-style: italic;
+    }
+    .warning-box {
+      background-color: #F4EBE1;
+      border-left: 4px solid #c96a4b;
+      padding: 12px 16px;
+      margin: 20px 0;
+    }
+    .pictogram-card {
+      background-color: #F4EBE1;
+      padding: 15px;
+      margin: 15px 0;
+    }
+    .gesture-step {
+      margin-left: 20px;
+      border-left: 2px solid #5a5047;
+      padding-left: 15px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+    }
+    th, td {
+      padding: 10px;
+      text-align: left;
+      table-layout: fixed;
+    }
+    th {
+      color: #6b46c1;
+      border-bottom: 2px solid #374151;
+    }
+
+    /* Bottom Navigation Container */
+    .bottom-nav {
+      padding: 15px 20px;
+      border-top: 1px solid #2d2640;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      margin: 30px -20px -20px -20px;
+    }
+
+    /* Inner Container (Matches your 850px central section layout) */
+    .bottom-nav .nav-container {
+      max-width: 850px;
+      margin: 0 auto;       /* Centers the 850px area on the screen */
+      display: flex;
+      justify-content: flex-end; /* Pushes the link to the right edge of the 850px box */
+    }
+
+    /* Matching Link Styles */
+    .bottom-nav a {
+      color: #0f0d17;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    /* Matching Hover Effect */
+    .bottom-nav a:hover {
+      color: #b794f4;
+    }
+
+
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="series.html">Series</a>
+    <a href="lore.html">Lore Vault</a>
+    <a href="about.html">About</a>
+</nav>
+
+<div class="entry-container">
+    <div class="notebook-header">
+        <p class="handwritten-note">[STRUCTURE NOTES // COMPILED BY I. WHITMAN]</p>
+        <h1>THE USER MANUAL</h1>
+        <p><strong>Subject:</strong> Upgrading a Rest</p>
+        <p><strong>Prerequisite:</strong> Read through <em>Book 7</em> before opening these notes.</p>
+    </div>
+
+    <h2>Rests</h2>
+    <p>
+        Rests or Rest Areas are small safe zones within the structure. They are defined by the presence of a
+        protection crystal.
+    </p>
+    <p>
+        Their appearance vary across the structure depending on the decor type and tier of the rest. They all follow
+        a standard pattern.  Their blueprint is a rectangular section adjacent to a hallway with a cluster of furniture.
+        They always include one table and two pieces of furniture that designed for sitting. They can include up to
+        six pieces of furniture. Higher tier rests can spawn with a glass wall between the rest proper and the hallway
+        with a door.
+    </p>
+    <p>
+        The protection crystal can appear anywhere in the volume of the rest including being embeded in the floor,
+        ceiling, walls and furniture.  It most commonly is found near the sofa, with above the sofa slightly more common
+        than below it.
+    </p>
+
+    <p class="handwritten-note">
+        Current theory is the placement of the crystal may give some indication of which direction the rest will
+        build out.  As of this writing that remains unproven. --I. W.
+    </p>
+    <p>
+        In regions where the structure decor is ruined a quest exists to rebuild the rest. Repeated attempts at
+        reassembling the broken frames of the furniture will grow the remaining fragments.  Once the frames are
+        complete they can be finished out to be functional chairs, tables and benches.  When the furniture cluster is
+        functionally complete, the owner of the crystal needs to either cast <i>restore</i> or clean the floor of
+        the entire rest with the use of a integrated mop and mop bucket.
+    </p>
+    <p>
+        These actions are the first round of rest upgrading. An alternate version to regrowing the existing frames is
+        to gather new components and replace the debris with finished furniture. Once complete the crystal will grow
+        in size.  When next the rest is empty, it will grow, doubling in size and adding a second furniture set.
+    </p>
+    <p>
+
+    </p>
+    <p>
+
+    </p>
+    <p>
+
+    </p>
+
+
+    <h2>Known Upgrades </h2>
+    <div class="pictogram-card">
+        <h3>Sanitation Facilities</h3>
+
+        <p><strong>Description: </strong><br>
+            This is a public sanitation facility that spawns off the main gallery room.  It can be spawned at anytime
+            but may not appear until later when the gallery grows long enough to reveal the door to it.
+        </p>
+        <p><strong>Minimum Spawn: </strong>Compost Plant seed in container<br>
+            It is necessary to urinate on the seed, which is why you need a container. A seed in container spawns a
+            sanitation facility with one compost plant and a sink.  Adding a bowl of water in the original spawn will
+            add one bathing pool filled with water.
+        </p>
+        <p><strong>Upgrade: </strong>Sinks/Compost plants<br>
+            Small containers of water.</p>
+        <p> The smallest sized water container is taken for sinks. The number of compost plants in the finished
+            facility will match the number of sinks.  Only one compost plant seed is needed.
+        </p>
+        <p><strong>Upgrade: </strong>Bathing Pools<br>
+            Large Bowls of Water</p>
+        <p> It is not necessary to provide bowls of the different chemicals found in the bathing pools, but to get a
+            full set of pools one bowl per pool is required.  The size of the bowl alters the size of the pool.
+        </p>
+        <p class="handwritten-note">
+            *Note: It is theorized here that water works because all the species involved in upgrading rests so far
+            have used water as their primary bathing pool.  Since ArTeeEe bath in dust, an experiment with an
+            ArTeeEe on the team using  dust needs to be executed. --I. W.
+        </p>
+
+    </div>
+    <div class="pictogram-card">
+        <h3>Kitchen</h3>
+
+        <p><strong>Description: </strong><br> A fully built out food preparation area in a Guild Hall is the equivalent
+            to what it available in a Square's Inn. It spawns off the main gallery on the opposite end of the center
+            from the sanitation facility.
+        </p>
+        <p><strong>Minimum Spawn: </strong>Portable Stove<br>
+            A single portable stove will spawn an empty room off the main gallery with the stove in it.
+            It can be spawned at anytime but may not appear until later when the gallery grows long enough to
+            reveal the door to it.  After spawning the kitchen can be upgraded.
+
+        </p>
+        <p><strong>Upgrade: </strong>Kitchen Stove<br>
+            Any addition to a bare kitchen, counter, sink, cooking ware, will cause the stove to upgrade. If those
+            improvements are spaced over several build steps, multiple stove upgrades are possible.
+        </p>
+
+        <p><strong>Upgrade: </strong>Counters<br>
+            Component built tables placed in the empty kitchen will convert to built-in counters. Shelves, pot racks,
+            and cutting boards can also be obtained in this manner.
+
+            <div class="gesture-step">
+                <p>With the correct sizing the counters will include temperature boxes.</p>
+            </div>
+        </p>
+        <p><strong>Upgrade: </strong>Sinks<br>
+            A bowl of water left in a spawned kitchen will convert to a water source and sink. The bowl size
+            controls sink size.  Placement of the bowl roughly controls where the sink will spawn.
+        </p>
+        <p><strong>Upgrade: </strong>Cooking Ware<br>
+            A selection of bowls, cups, spoons and knives will spawn a full set of cooking utensils.  This includes the
+            brewing tank.
+        </p>
+        <p><strong>Upgrade: </strong>Vendor<br>
+            A selection of foods left on a counter will cause a Vendor to spawn in that location selling
+            those items along with the standard set of food vendor items.<br>
+            Example: six bottles of beer
+        </p>
+
+    </div>
+    <div class="pictogram-card">
+        <h3>Crafting Workshops</h3>
+
+        <p><strong>Description: </strong><br> A workshop with tools for use in crafting.  The tools are bound to the
+            room and can not be removed.  They wear out, but once broken are replaced six days later.
+        </p>
+        <p><strong>Minimum Spawn: </strong>Starter Tools<br>
+            A full set of starter tools from one of the four base crafts will spawn a joint workshop. Workshops
+            spawn off access hallways across from the kitchen and sanitation facility.
+        </p>
+        <p><strong>Upgrade: </strong>Workshop Size<br>
+            Adding additional tools, both for the base crafts and more advanced crafts.
+        </p>
+        <p><strong>Upgrade: </strong>Tool Size<br>
+            Any upgrade to a workshop will cause the included tools to upgrade. By spacing the workshop upgrades,
+            multiple tool upgrades are possible.
+        </p>
+        <p><strong>Upgrade: </strong>Individual Workshops<br>
+        <ul>
+            <li>
+                1. A full set of tier four tools will spawn a dedicated workshop for that craft.
+            </li>
+            <li>
+                2. Crafting with each tool in the starter set causes a dedicated workshop to spawn for that craft.
+                The tier of the spells is used to determine the size of the dedicated workshop.
+            </li>
+            <li>
+                3. Adding a new set of tools for another craft, and crafting with them to produce a finished product,
+                will spawn a new dedicated workshop for that craft.
+            </li>
+        </ul>
+        </p>
+    </div>
+    <div class="pictogram-card">
+        <h3>Storage</h3>
+
+        <p><strong>Description: </strong><br>A room equipped with shelving for storage. Decay rates in the room match a
+            settled square.
+        </p>
+        <p><strong>Minimum Spawn: </strong>Component Shelves<br>
+            A set of component shelves with items stored on them will spawn a storage room.  The items stored on them
+            can be components set for use in later upgrades.
+        </p>
+        <p><strong>Upgrade: </strong>Secure Storage<br>
+            Component shelving matching the depth and grid of paid secure storage.
+        </p>
+        <p><strong>Upgrade: </strong>Armory<br>
+            A Weapon stand, with weapons and armor tree with Armor on it, will spawn an Armory.  This separate room
+            spawns off the storage room and is initially locked to the crystal owner.
+        </p>
+    </div>
+
+    <div class="pictogram-card">
+        <h3>Barracks</h3>
+
+        <p><strong>Description: </strong><br> This room is for overnight stays.  Beds and everything owned by occupants
+            in the room experience the decay rates of a square. All other contents decay at the wildspace rates.
+
+        </p>
+        <p><strong>Minimum Spawn: </strong>Bunk beds with leather pallets<br>
+            The barracks can be spawned with a player bed of any kind.  The bunk bed and leather pallet option is the
+            must easily obtainable.
+        </p>
+        <p><strong>Upgrade: </strong>Size Increase<br>
+            Added Bunk Beds inside the spawned barracks increases it size.
+        </p>
+        <p><strong>Upgrade: </strong>Private Bedrooms<br>
+            Full beds from any species, set on either side of the entry doors, with an outlined component wall around
+            them will spawn private bedrooms for the trainers use. The number of private bedrooms is limited to two.
+        </p>
+    </div>
+    <div class="pictogram-card">
+        <h3>Training Room</h3>
+
+        <p><strong>Description: </strong><br>
+            This room includes a sparing circle which reduces damage from spells. It provides training weapons that
+            can not be removed from the room.  They do less damage and in the case of arrows and throwing knives provide
+            the illusion of an endless supply.
+        </p>
+        <p><strong>Minimum Spawn: </strong>Weapon Set<br> Set of weapons in a weapon stand.
+
+        <div class="gesture-step">
+            <p>1. Staff</p>
+            <p>2. Hammer</p>
+            <p>3. Ax</p>
+            <p>4. Spear</p>
+            <p>5. Bow</p>
+            <p>6. Knife</p>
+            <p>7. Sword</p>
+        </div>
+        </p>
+
+        <p><strong>Upgrade: </strong>Size Increase<br> Adding weapon racks with weapons sets.
+        </p>
+
+        <p><strong>Upgrade: </strong>Sparing Circle Tier Increase<br> Use higher tier weapons for the build and upgrades.
+        </p>
+
+        <p><strong>Upgrade: </strong>Archery<br> Adding an archery target and demonstrating its use.
+        </p>
+
+        <p><strong>Upgrade: </strong>Virtual Opponent<br> Demonstrating a wide range of fighting spells.
+        </p>
+
+    </div>
+    <div class="pictogram-card">
+        <h3>Library</h3>
+
+        <p><strong>Description: </strong><br> The library is the Enchantment workroom.  All books bound to it become
+            part of the Game code and can be spawned anywhere in the Game.
+        </p>
+        <p><strong>Minimum Spawn: </strong>Books<br>
+
+        </p>
+        <p><strong>Upgrade: </strong>Size Increase<br> Adding at least six books on each turn will increase the library.
+        </p>
+        <p><strong>Upgrade: </strong>Shelving<br> Added component shelving will become integrated in the room.
+        </p>
+        <p><strong>Upgrade: </strong>Desks<br> A book binder, velum cutter and styluses will add desks to the room.
+        </p>
+        <p><strong>Upgrade: </strong>Catalog<br> On the third upgrade if desks and shelving are in place the Catalog
+            will spawn.
+        </p>
+
+    </div>
+    <div class="pictogram-card">
+        <h3>Grow Room</h3>
+
+        <p><strong>Description: </strong><br> This is the Chemistry workroom. All plants kept in the room are
+            automatically watered. Their growth and fruit production is boosted. Fish alone with water plants can
+            be kept in the water half of the room and are automatically fed.
+        </p>
+        <p><strong>Minimum Spawn: </strong>Plants in Integrated Containers<br> Plants in higher tier containers spawn
+            larger versions in the grow room.
+        </p>
+        <p><strong>Upgrade: </strong>Increased Size<br> The grow room can be increases by adding plants.  Water plants
+            and fish can also be added, increasing the water half of the grow room.
+        </p>
+    </div>
+    <div class="pictogram-card">
+        <h3>Inventory Access</h3>
+
+        <p><strong>Description: </strong><br>The Inventory Access is the standard physical interface found in the Game.
+            It spawns in the center section of the gallery.
+        </p>
+        <p><strong>Minimum Spawn: </strong>Code Written on Wall.
+        </p>
+    </div>
+    <div class="pictogram-card">
+        <h3>Back door</h3>
+
+        <p><strong>Description: </strong><br>Adds another entrance to the Guild hall that opens up on two different
+            floors from the existing entrances.
+        </p>
+        <p><strong>Minimum Spawn: </strong>Escape toy.
+        </p>
+    </div>
+    <div class="pictogram-card">
+        <h3>Spell and Quest Inscription</h3>
+
+        <p><strong>Description: </strong><br> A standard wall inscription.
+
+        </p>
+        <p><strong>Minimum Spawn: </strong>Statue
+        </p>
+    </div>
+    <div class="pictogram-card">
+        <h3>Upper Floors</h3>
+
+        <p><strong>Description: </strong><br>
+
+        </p>
+        <p><strong>Minimum Spawn: </strong>Opaque Wall<br> There is no known way to open the quest ability to add upper
+            rooms to a Guild hall except to start with an Opaque hall. Once a Guild hall is built, the ability to buy
+            the upgrade can be opened by traveling to all the upper rooms looking down onto the Guild hall and
+            touching the glass from the back side.
+        </p>
+        <p><strong>Minimum Spawn: </strong>Quests<br> If the ability to add upper rooms is open, the repair quest for
+        the office and one other room type has to be completed in order to open the upper rooms.
+
+        <div class="gesture-step">
+            <p>1. Bedroom, with on-suite sanitation facility.</p>
+            <p>2. Game Room.</p>
+            <p>3. Theater.</p>
+            <p>4. Office.</p>
+            <p>5. Tatoo Parlor.</p>
+            <p>5. Pet Shop.</p>
+            <p>5. Shipping Office.</p>
+        </div>
+
+        </p>
+
+    </div>
+
+</div>
+<nav class="bottom-nav">
+    <div class="nav-container">
+        <a href="lore.html">Index</a>
+    </div>
+</nav>
+</body>
+</html>

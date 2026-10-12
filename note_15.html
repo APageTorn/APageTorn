@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Manual: Notes from within the Structure</title>
+
+    <!-- Google Fonts for Hand-written Field Notes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Architects+Daughter&family=Kalam:wght@400;700&family=Patrick+Hand&display=swap"
+          rel="stylesheet">
+    <style>
+    body {
+      font-family: 'Patrick Hand', 'Architects Daughter', cursive;
+      line-height: 1.6;
+      color: #2b2b2b;
+      background-color: #F4EBE1;
+      margin: 0;
+      padding: 20px;
+    }
+    nav {
+      padding: 15px 20px;
+      text-align: center;
+      border-bottom: 1px solid #2d2640;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      margin: -20px -20px 30px -20px;
+    }
+    nav a {
+      color: #0f0d17;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 600;
+    }
+    nav a:hover {
+      color: #b794f4; /* Lavender hover */
+    }
+    .entry-container {
+      max-width: 850px;
+      margin: 0 auto;
+      background-color: #F4EBE1;
+      border: 1px solid #2d2640;
+      border-radius: 8px;
+      padding: 30px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    }
+    .notebook-header {
+      border-bottom: 2px dashed #8c7a6b;
+      padding-bottom: 12px;
+      margin-bottom: 25px;
+    }
+    .handwritten-note {
+      font-family: 'Kalam', cursive;
+      font-weight: 700;
+      color: #6b46c1;
+      font-style: italic;
+    }
+    .warning-box {
+      background-color: #F4EBE1;
+      border-left: 4px solid #c96a4b;
+      padding: 12px 16px;
+      margin: 20px 0;
+    }
+    .pictogram-card {
+      background-color: #F4EBE1;
+      padding: 15px;
+      margin: 15px 0;
+    }
+    .gesture-step {
+      margin-left: 20px;
+      border-left: 2px solid #5a5047;
+      padding-left: 15px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+    }
+    th, td {
+      padding: 10px;
+      text-align: right;
+      table-layout: fixed;
+    }
+    th {
+      color: #6b46c1;
+      border-bottom: 2px solid #374151;
+    }
+
+    table tr th:first-child,
+    table tr td:first-child {
+      text-align: left;
+      vertical-align: top;
+      color: #6b46c1;
+      border-bottom: none;
+      font-weight: bold;
+    }
+
+    /* Bottom Navigation Container */
+    .bottom-nav {
+      padding: 15px 20px;
+      border-top: 1px solid #2d2640;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      margin: 30px -20px -20px -20px;
+    }
+
+    /* Inner Container (Matches your 850px central section layout) */
+    .bottom-nav .nav-container {
+      max-width: 850px;
+      margin: 0 auto;       /* Centers the 850px area on the screen */
+      display: flex;
+      justify-content: flex-end; /* Pushes the link to the right edge of the 850px box */
+    }
+
+    /* Matching Link Styles */
+    .bottom-nav a {
+      color: #0f0d17;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    /* Matching Hover Effect */
+    .bottom-nav a:hover {
+      color: #b794f4;
+    }
+
+    </style>
+</head>
+<body>
+
+<!-- Standard Navigation Header -->
+<nav>
+    <a href="index.html">Home</a>
+    <a href="series.html">Series</a>
+    <a href="lore.html">Lore Vault</a>
+    <a href="about.html">About</a>
+</nav>
+
+<div class="entry-container">
+    <div class="notebook-header">
+        <p class="handwritten-note">[RESEARCH LOG // COMPILED BY I. WHITMAN]</p>
+        <h1>THE SPELL LEARNING CURVE</h1>
+        <p><strong>Subject:</strong> Intelligence scaling and its interaction with learning new spells.</p>
+        <p><strong>Prerequisite:</strong> Read through <em>Book 8</em> before opening these notes.</p>
+    </div>
+
+    <h2>1. Attribute Scaling</h2>
+    <p>
+        Maximum possible attribute values expand exponentially by a power of six at each tier
+        (6<span><sup>T</sup></span>).
+    </p>
+
+    <table class="data-table">
+        <thead>
+        <tr>
+            <th>Tier</th>
+            <th>0</th>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
+            <th>4</th>
+            <th>5</th>
+            <th>6</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Max Attribute</td>
+            <td>6</td>
+            <td>36</td>
+            <td>216</td>
+            <td>1,296</td>
+            <td>7,776</td>
+            <td>46,656</td>
+            <td>279,936</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <h2>2. Baseline Learning Difficulty Formula</h2>
+    <p>
+        Current theory posits that spell learning difficulty scales in the same manner as attributes,
+        offset by a minimum baseline attempt count that is linear with tier.
+    </p>
+
+    <table class="data-table">
+        <thead>
+        <tr>
+            <th>Tier</th>
+            <th>0</th>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
+            <th>4</th>
+            <th>5</th>
+            <th>6</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Minimum Attempts</td>
+            <td>6</td>
+            <td>12</td>
+            <td>18</td>
+            <td>24</td>
+            <td>30</td>
+            <td>36</td>
+            <td>42</td>
+        </tr>
+        <tr>
+            <td>Base Difficulty</td>
+            <td>6</td>
+            <td>36</td>
+            <td>216</td>
+            <td>1,296</td>
+            <td>7,776</td>
+            <td>46,656</td>
+            <td>279,936</td>
+        </tr>
+        <tr class="highlight-row">
+            <td>Total Unmitigated Attempts</td>
+            <td>12</td>
+            <td>48</td>
+            <td>234</td>
+            <td>1,320</td>
+            <td>7,806</td>
+            <td>46,692</td>
+            <td>279,978</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <h2>3. Intelligence Credit Mitigation</h2>
+    <p>
+        A credit is applied based on the Player's intelligence stat. Assuming a starting intelligence of 3 at Tier 0
+        with the standard automatic tripling at each Tier, a baseline Player maintains the following minimum
+        intelligence values and actual needed attempt counts:
+    </p>
+
+    <table class="data-table">
+        <thead>
+        <tr>
+            <th>Tier</th>
+            <th>0</th>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
+            <th>4</th>
+            <th>5</th>
+            <th>6</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Base Intelligence</td>
+            <td>3</td>
+            <td>9</td>
+            <td>27</td>
+            <td>81</td>
+            <td>243</td>
+            <td>729</td>
+            <td>2187</td>
+        </tr>
+        <tr class="highlight-row">
+            <td>Actual Player Attempts</td>
+            <td>9</td>
+            <td>39</td>
+            <td>207</td>
+            <td>1,239</td>
+            <td>7,563</td>
+            <td>45,963</td>
+            <td>277,791</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <p class="handwritten-note">
+        *Field Observation: Field data shows new arrivals take between 18 and 24 tries to acquire their first Tier 0
+        spell. This is higher than our calculated 9 tries. This difference is likely due to an oversimplification of
+        the minimum required attempts. It is known that factors do affect the minimum, including having a trainer, only
+        learning one spell at a time, and the precision of each attempt. Still the curve holds up. It cleanly
+        demonstrates why so few Players ever reach Tier 4. --I. W.
+    </p>
+
+    <h2>4. Downward Tier Learning Efficiency</h2>
+    <p>
+        Intelligence directly reduces difficulty, but cannot reduce total tries below the tier's required minimum
+        attempt threshold. When an established Tier 3 Player acquires lower-tier spells, difficulty drops dramatically:
+    </p>
+
+    <table class="data-table">
+        <thead>
+        <tr>
+            <th>Spell Tier</th>
+            <th>0</th>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Minimum Tries</td>
+            <td>6</td>
+            <td>12</td>
+            <td>18</td>
+            <td>24</td>
+        </tr>
+        <tr>
+            <td>Base Difficulty</td>
+            <td>6</td>
+            <td>36</td>
+            <td>216</td>
+            <td>1,296</td>
+        </tr>
+        <tr>
+            <td>Tier 3 Intelligence Credit</td>
+            <td>81</td>
+            <td>81</td>
+            <td>81</td>
+            <td>81</td>
+        </tr>
+        <tr class="highlight-row">
+            <td>Actual Tries Required</td>
+            <td>6</td>
+            <td>12</td>
+            <td>153</td>
+            <td>1,239</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <h2>5. How Does Anyone Reach Tier 4?</h2>
+    <p>
+        Relying solely on automatic tier-tripling leaves a Player facing 1,239 tries to master a Tier 3 control.
+        The key to reaching higher tiers lies in pushing intelligence far beyond baseline doubling at tier.
+    </p>
+    <p>
+        Intelligence stat growth is driven by diversity in magic. Learning as many skill and roles as possible will
+        increase a Player's intelligence stat beyond the doubling at tier thresholds.
+    </p>
+    <ul>
+        <li><strong>Multiple Control Trees:</strong> Studying across Light, Sound, Force, Temperature, Electricity,
+            Chemistry, and Gravitonics.
+        </li>
+        <li><strong>Multiple Schools:</strong> Cast, Imbuing, Crafting, Chemistry, Group, Enchanting, Song.
+        </li>
+        <li><strong>Role Adaptability:</strong> Transitioning between Scout, Anchor, Healer, Tactician, Amplifier,
+            Striker, and Disruptor.
+        </li>
+        <li><strong>Weapon Diversity:</strong> Mastering Staff, Hammer, Axe, Spear, Sword, Knife, and Bow
+            configurations.
+        </li>
+        <li><strong>Utility Variance:</strong> Cloaking, Enhancement, Defensive, Offensive, Imbuing, and Recycling
+            spell types.
+        </li>
+    </ul>
+
+    <div class="pictogram-card">
+        <h3>The Optimized High-Intelligence Path (90% Stat Cap)</h3>
+        <p>If a Player actively optimizes cross-training to maintain 90% of maximum tier intelligence, the required
+            number of attempts need to learn a new control shrinks dramatically:</p>
+
+        <table class="data-table">
+            <thead>
+            <tr>
+                <th>Tier</th>
+                <th>0</th>
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+                <th>4</th>
+                <th>5</th>
+                <th>6</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Minimum Tries</td>
+                <td>6</td>
+                <td>12</td>
+                <td>18</td>
+                <td>24</td>
+                <td>30</td>
+                <td>36</td>
+                <td>42</td>
+            </tr>
+            <tr>
+                <td>Base Difficulty</td>
+                <td>6</td>
+                <td>36</td>
+                <td>216</td>
+                <td>1,296</td>
+                <td>7,776</td>
+                <td>46,656</td>
+                <td>279,936</td>
+            </tr>
+            <tr>
+                <td>Optimized INT (90%)</td>
+                <td>5</td>
+                <td>32</td>
+                <td>194</td>
+                <td>1,166</td>
+                <td>6,998</td>
+                <td>41,990</td>
+                <td>251,942</td>
+            </tr>
+            <tr class="highlight-row">
+                <td>Optimized Player Tries</td>
+                <td>7</td>
+                <td>16</td>
+                <td>40</td>
+                <td>154</td>
+                <td>808</td>
+                <td>4,702</td>
+                <td>28,036</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="warning-box">
+        <strong>TIME INVESTMENT ANALYSIS (TIER 3 -> TIER 4):</strong><br>
+        Advancing to Tier 4 requires mastering twelve Tier 3 spells. At an optimized rate of 154 attempts per spell and
+        5 minutes per attempt, learning 12 spells takes <strong>154 total hours</strong> (or roughly 19.25 eight-hour
+        training days).<br><br>
+        <em>In practice, native-born residents average a minimum of 10 years to bridge this gap due to resource
+            constraints, combat fatigue, and failure to sufficiently cross-train.</em>
+    </div>
+
+    <p class="handwritten-note">
+        *Note on Tier 6: Although mathematical formulas exist for Tier 6 data, no verified Tier 6 spells have been
+        recorded in colonial history. --I. W.
+    </p>
+    <!-- 6. LEARNING SPECIFIC SPELLS -->
+    <h2>6. Learning Specific Spells</h2>
+    <p>
+        The previous analysis assumes that all control codes within a tier require equal training effort. In practice,
+        significant structural variances exist based on code architecture and spell nature. Higher-tier codes generally
+        fall into four structural classifications:
+    </p>
+
+    <div class="pictogram-card">
+        <h3>Spell Architecture & Difficulty Hierarchy</h3>
+
+        <p><strong>1. Combination Codes (Lowest Difficulty):</strong><br>
+            Combines two or more lower-tier codes. If all prerequisite lower-tier codes are already mastered, the
+            number of required attempts is minimal. Combination requires only half the number of attemts to learn
+            compared to what is required for new functionality. Usually, only one primary prerequisite is
+            hard-required by the system; however, if any secondary prerequisite codes remain unlearned, the attempt
+            counts needed to master those missing prerequisites are added directly onto the higher-tier code's
+            learning threshold.</p>
+
+        <p><strong>2. Amplified / Stronger Versions (Moderate Difficulty):</strong><br>
+            A direct tier-upgrade to an existing prerequisite. Because the lower-tier code is a hard prerequisite, no
+            missing-prerequisite attempt penalties are added. Furthermore, the there is no combination overhead.</p>
+
+        <p><strong>3. Amplified / Added Functionality (Elevated Difficulty):</strong><br>
+            A direct tier-upgrade to an existing prerequisite. Because the lower-tier code is a hard prerequisite, no
+            missing-prerequisite attempt penalties are added. The additional functionality has a cost similar to a
+            single missed-prerequisite, plus the required attempts for the combination.</p>
+
+        <p><strong>4. Standalone / No-Prerequisite Codes (Highest Difficulty):</strong><br>
+            New control codes requiring no antecedent knowledge. These incur the full base learning cost of the
+            function, the combination overhead, plus an additional attempt penalty calculated as if the Player
+            were missing one prerequisite code across all utilized control trees.</p>
+    </div>
+
+    <h2>7. The Destructive Potential Penalty</h2>
+    <p>
+        Beyond structural code complexity, the Game applies a safety modifier based on potential interference with
+        other players' game play.
+    </p>
+
+    <div class="warning-box">
+        <strong>FIELD COMPARISON // DESTRUCTIVE MULTIPLIERS:</strong><br>
+        Consider two Tier 5 spells:<br>
+        <ul>
+            <li><strong>Conceal (Tier 5 Cloaking):</strong> Relatively easy to master due to non-lethal, utility-focused
+                mechanics.
+            </li>
+            <li><strong>Ring of Death (Tier 5 Offensive):</strong> Possesses the raw system output capacity to eliminate
+                over a thousand Players in a single invocation.
+            </li>
+        </ul>
+        To prevent accidental catastrophic misuse, the Structure doubles the total
+        attempt count required to learn high-fatality spells like <em>Ring of Death</em>.
+    </div>
+
+</div>
+<nav class="bottom-nav">
+  <div class="nav-container">
+    <a href="lore.html">Index</a>
+  </div>
+</nav>
+
+</body>
+</html>

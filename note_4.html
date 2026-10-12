@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Import the fonts from the Google Fonts CDN -->
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Architects+Daughter&family=Kalam:wght@400;700&family=Patrick+Hand&display=swap"
+          rel="stylesheet">
+
+    <title>User Manual: Notes from within the Structure</title>
+    <style>
+    body {
+      font-family: 'Patrick Hand', 'Architects Daughter', cursive;
+      line-height: 1.6;
+      color: #2b2b2b;
+      background-color: #F4EBE1;
+      margin: 0;
+      padding: 20px;
+    }
+    nav {
+      padding: 15px 20px;
+      text-align: center;
+      border-bottom: 1px solid #2d2640;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      margin: -20px -20px 30px -20px;
+    }
+    nav a {
+      color: #0f0d17;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 600;
+    }
+    nav a:hover {
+      color: #b794f4; /* Lavender hover */
+    }
+    .entry-container {
+      max-width: 850px;
+      margin: 0 auto;
+      background-color: #F4EBE1;
+      border: 1px solid #2d2640;
+      border-radius: 8px;
+      padding: 30px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    }
+    .notebook-header {
+      border-bottom: 2px dashed #8c7a6b;
+      padding-bottom: 12px;
+      margin-bottom: 25px;
+    }
+    .handwritten-note {
+      font-family: 'Kalam', cursive;
+      font-weight: 700;
+      color: #6b46c1;
+      font-style: italic;
+    }
+    .warning-box {
+      background-color: #F4EBE1;
+      border-left: 4px solid #c96a4b;
+      padding: 12px 16px;
+      margin: 20px 0;
+    }
+    .pictogram-card {
+      background-color: #F4EBE1;
+      padding: 15px;
+      margin: 15px 0;
+    }
+    .gesture-step {
+      margin-left: 20px;
+      border-left: 2px solid #5a5047;
+      padding-left: 15px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+    }
+    th, td {
+      padding: 10px;
+      text-align: left;
+      table-layout: fixed;
+    }
+    table tr th:first-child,
+    table tr td:first-child {
+        width: 130px;
+      text-align: right;
+      vertical-align: top;
+    }
+
+    /* Bottom Navigation Container */
+    .bottom-nav {
+      padding: 15px 20px;
+      border-top: 1px solid #2d2640;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      margin: 30px -20px -20px -20px;
+    }
+
+    /* Inner Container (Matches your 850px central section layout) */
+    .bottom-nav .nav-container {
+      max-width: 850px;
+      margin: 0 auto;       /* Centers the 850px area on the screen */
+      display: flex;
+      justify-content: flex-end; /* Pushes the link to the right edge of the 850px box */
+    }
+
+    /* Matching Link Styles */
+    .bottom-nav a {
+      color: #0f0d17;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    /* Matching Hover Effect */
+    .bottom-nav a:hover {
+      color: #b794f4;
+    }
+
+
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="series.html">Series</a>
+    <a href="lore.html">Lore Vault</a>
+    <a href="about.html">About</a>
+</nav>
+
+<div class="entry-container">
+    <div class="notebook-header">
+        <p class="handwritten-note">[SPAWN RATES // COMPILED BY I. WHITMAN]</p>
+        <h1>THE USER MANUAL</h1>
+        <p><strong>Subject:</strong> Furniture in the Structure</p>
+        <p><strong>Prerequisite:</strong> Read through <em>Book 2</em> before opening these notes.</p>
+    </div>
+
+    <h2>1. The Reset</h2>
+    <p>
+        The structure is a labrynth of corridors with connecting rooms.  It appears as a ruined underground building
+        that was abandoned long ago. Most of the structure is considered wildspace as apposed to safe zones.  See
+        the section on Protection Crystals for more details on safe zones. Rooms in wildspace are decorated with a
+        varity of items, the majority of which has the appearance of debris. When this decor or set dressing is moved
+        within a room or removed from it, it is eventually replaced at its original position.  This replacement cycle
+        in a room is called a reset. The time between resets varies for each type of item. Not including tools and
+        animals, a room completely resets in 6 to 36 days.
+    </p>
+
+    <h2>2. Room inventory types</h2>
+
+    <table>
+            <tr>
+                <td><strong>Animals:</strong></td>
+                <td>The animals found in the rooms are always adversarial. They attack blindly and are very dangerous.
+                    When killed they drop coins and prize items.  The items are copies of what can be obtained by
+                    harvesting the animal carcass.  They include skins, meat, claws and tusks. Prize items are entirely
+                    virtual and go directly into inventory when touched. The organic equivalents do not go into
+                    inventory, such as the actual animal skin or meat.
+                </td>
+            </tr>
+            <tr>
+                <td><strong>Scrap:</strong></td>
+                <td>Scrap is an entirely virtual item.  The visual image of it is part of the overlay.  When scrap is
+                    touched it disappears and is added to inventory. Scrap can be pulled from inventory as a physical
+                    item that can then be processed into basic crafting supplies including ingots, boards and thread.
+                    Larger shop level tools will accept scrap in its digital form from a user's inventory skipping
+                    the physical form. Scrap can be metal, fiber, wood or glass.
+                </td>
+            </tr>
+            <tr>
+                <td><strong>Debris:</strong></td>
+                <td>Debris is the physical form of scrap.  It can be put into inventory or fed directly into a tool to
+                    be processed into basic crafting supplies including ingots, boards and thread. Larger shop level
+                    tools will accept scrap in its digital form from a user's inventory skipping the physical form.
+                    Putting Debris into inventory reduces the amount.
+                </td>
+            </tr>
+            <tr>
+                <td><strong>Tools:</strong></td>
+                <td>Tools are items with function.  They can be used in crafting or cooking. They are controlled
+                    through a tap or squeeze interface. They do not require a start or stop symbol to activate their
+                    functions. They can be put into inventory, except for very large items like anvils.
+                </td>
+            </tr>
+            <tr>
+                <td><strong>Items:</strong></td>
+                <td>These are objects that can be put into inventory, but have no controlled function. They are useful
+                    as is.  Examples are plant pots, bowls and spoons.
+                </td>
+            </tr>
+            <tr>
+                <td><strong>Furniture:</strong></td>
+                <td> This is everything that will not go into inventory. This includes actual furniture, tables,
+                    chairs, beds.  It also includes non-useful objects. Actual furniture comes in two types. There is
+                    component furniture and unique pieces.
+                </td>
+            </tr>
+        </table>
+    <p class="handwritten-note">
+        *Note: Most items that go into inventory will revert to a plastic appearance when removed from the structure's
+        area of influence. This is a sign that they are integrated. While most items that won't go into inventory
+        remain unchanged.  There are exceptions to both. --I. W.
+    </p>
+
+    <h2>3. Respawn Categories</h2>
+        <div class="pictogram-card">
+        <h3>A. Animals</h3>
+        <p>
+            Animal spawning is defined by region. The types of animals, number of animals per room, percentage of
+            rooms occupied on first entry, the number of rooms that have animals added after occupation, and the
+            respawn rates are all defined by region. Once a room that has been cleared of animals has been exited,
+            the animals can be replaced within minutes, but it can also remain unoccupied for days.
+        </p>
+        <p class="handwritten-note">
+            *Note: It is my belief that animal spawning is controlled by a random number generated pick from the above
+            described parameters. --I. W.
+        </p>
+        </div>
+        <div class="pictogram-card">
+        <h3>B. Tools</h3>
+        <p>
+            Tools appear in a spawn region.  This region is a circle on the map.  Within the area will be multiple rooms
+            wth predefined locations where a tool can be placed. Tools within a spawn area will all be usable within a
+            single craft.  If a tools is collected it will be replaced by another tool within the region in thirty-six
+            days. It can be replaced in as little as six days.  Shorter replacement cycles are tied to smaller tools
+            than the previous spawn. Example: If a loom is collected from a room, a spindle can appear within the
+            spawn region in six days. They tool sets and the crafts they support are defined per region.
+        </p>
+        </div>
+        <div class="pictogram-card">
+        <h3>C. All Others</h3>
+        <p>
+            All other contents are replaced on a set schedule.  If the room is unvisited, the items will reappear in
+            their original location as defined in the table below.  If the room is visited before the required spawn
+            time has passed current best guess is the timer resets.
+        </p>
+            <table>
+                <tr>
+                <th>Item Type</th>
+                <th>Respawn Time, (days)</th>
+                </tr>
+                <tr>
+                    <td>Scrap</td>
+                    <td>24 to 36</td>
+                </tr>
+                <tr>
+                    <td>Debris</td>
+                    <td>12 to 18</td>
+                </tr>
+                <tr>
+                    <td>Items</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>Furniture</td>
+                    <td>6</td>
+                </tr>
+            </table>
+        <div class="warning-box">
+            <strong>WARNING:</strong><br>
+              An complete component assembly is always Furniture, but individual disassembled items can qualify as Debris,
+              and will respawn on the Debris schedule.
+          </div>
+        </div>
+
+    <p class="handwritten-note">
+        *Note: There are exceptions to these rules. When those exceptions occur it is a sign that a Narrative is active.
+        This is especially true of odd spawns of animals. Keeping track of things that don't fit this pattern is a
+        good way to discover new spells and quests. --I. W.
+    </p>
+
+    <h2>4. The Remodel</h2>
+    <p> The arrangement of rooms and hallways change over time.  Most areas are reworked one to two times every year.
+        this complete rework is called a remodel. During the remodel all spawn locations and zones are redefined.
+    </p>
+
+</div>
+<nav class="bottom-nav">
+  <div class="nav-container">
+    <a href="lore.html">Index</a>
+  </div>
+</nav>
+
+</body>
+</html>

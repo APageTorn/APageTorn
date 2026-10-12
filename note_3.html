@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Import the fonts from the Google Fonts CDN -->
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Architects+Daughter&family=Kalam:wght@400;700&family=Patrick+Hand&display=swap"
+          rel="stylesheet">
+
+    <title>User Manual: Notes from within the Structure</title>
+    <style>
+    body {
+      font-family: 'Patrick Hand', 'Architects Daughter', cursive;
+      line-height: 1.6;
+      color: #2b2b2b;
+      background-color: #F4EBE1;
+      margin: 0;
+      padding: 20px;
+    }
+    nav {
+      padding: 15px 20px;
+      text-align: center;
+      border-bottom: 1px solid #2d2640;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      margin: -20px -20px 30px -20px;
+    }
+    nav a {
+      color: #0f0d17;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 600;
+    }
+    nav a:hover {
+      color: #b794f4; /* Lavender hover */
+    }
+    .entry-container {
+      max-width: 850px;
+      margin: 0 auto;
+      background-color: #F4EBE1;
+      border: 1px solid #2d2640;
+      border-radius: 8px;
+      padding: 30px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    }
+    .notebook-header {
+      border-bottom: 2px dashed #8c7a6b;
+      padding-bottom: 12px;
+      margin-bottom: 25px;
+    }
+    .handwritten-note {
+      font-family: 'Kalam', cursive;
+      font-weight: 700;
+      color: #6b46c1;
+      font-style: italic;
+    }
+    .warning-box {
+      background-color: #F4EBE1;
+      border-left: 4px solid #c96a4b;
+      padding: 12px 16px;
+      margin: 20px 0;
+    }
+    .pictogram-card {
+      background-color: #F4EBE1;
+      padding: 15px;
+      margin: 15px 0;
+    }
+    .gesture-step {
+      margin-left: 20px;
+      border-left: 2px solid #5a5047;
+      padding-left: 15px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+    }
+    th, td {
+      padding: 10px;
+      text-align: left;
+      table-layout: fixed;
+    }
+    th {
+      color: #6b46c1;
+      border-bottom: 2px solid #374151;
+    }
+
+    /* Bottom Navigation Container */
+    .bottom-nav {
+      padding: 15px 20px;
+      border-top: 1px solid #2d2640;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      margin: 30px -20px -20px -20px;
+    }
+
+    /* Inner Container (Matches your 850px central section layout) */
+    .bottom-nav .nav-container {
+      max-width: 850px;
+      margin: 0 auto;       /* Centers the 850px area on the screen */
+      display: flex;
+      justify-content: flex-end; /* Pushes the link to the right edge of the 850px box */
+    }
+
+    /* Matching Link Styles */
+    .bottom-nav a {
+      color: #0f0d17;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    /* Matching Hover Effect */
+    .bottom-nav a:hover {
+      color: #b794f4;
+    }
+
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="series.html">Series</a>
+    <a href="lore.html">Lore Vault</a>
+    <a href="about.html">About</a>
+</nav>
+
+<div class="entry-container">
+    <div class="notebook-header">
+        <p class="handwritten-note">[STRUCTURE NOTES // COMPILED BY A. CLEARWATER // UPDATED BY I. WHITMAN]</p>
+        <h1>THE USER MANUAL</h1>
+        <p><strong>Subject:</strong> Numbers in the Underground Structure</p>
+        <p><strong>Prerequisite:</strong> Read through <em>Book 1</em> before opening these notes.</p>
+    </div>
+
+    <h2>Inscription Fonts</h2>
+    <p>
+        Throughout the underground structure are large inscriptions on the walls.  They can be engraved in stone,
+        stamped in metal or painted on tile. These inscriptions are made up of no more than seven symbols each. These
+        symbols represent the numbers zero through six.
+    </p>
+    <p>
+        These inscriptions can be decoded into pictographic hints about structure control codes using the numerical
+        values for the symbols and their patterns.
+    </p>
+    <p>
+        Although each inscription only has no more than seven symbols in it, there are more than seven symbols across
+        multiple inscriptions. Seven fonts have been identified. They are listed here in the order of increasing
+        complexity of the inscriptions they were discovered in.
+    </p>
+    <p class="handwritten-note">
+        *Note: I have updated this table to match the tier evolution on the personal interface. --I. W.
+    </p>
+
+    <table>
+    <tr>
+      <th>Tier</th>
+      <th>Name</th>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>Latin</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Roman</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Cuneiform</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Arabic</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Polygon</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Mosaic</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Egyption</td>
+    </tr>
+  </table>
+
+  <div class="warning-note">
+    <strong>COLOR :</strong><br>
+      Although not a font, the colors used to paint or fill symbols in complex inscriptions can also be interpreted as
+      a number.  The color has the value of magic tree it represents.  The color is included in the table below for
+      completeness.
+  </div>
+
+
+    <table>
+    <tr>
+      <th>Number</th>
+      <th>Color</th>
+      <th>Latin</th>
+      <th>Roman</th>
+      <th>Cuneiform</th>
+      <th>Arabic</th>
+      <th>Polygon</th>
+      <th>Mosaic</th>
+      <th>Egyption</th>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>White</td>
+      <td>Hash Mark</td>
+      <td>Over and Underlined X</td>
+      <td></td>
+      <td></td>
+      <td>Octagon</td>
+      <td>Circle</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Yellow</td>
+      <td>Dot</td>
+      <td>Slash</td>
+      <td></td>
+      <td></td>
+      <td>Circle</td>
+      <td>Teardrop</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Green</td>
+      <td>Dash</td>
+      <td>Inverted V</td>
+      <td></td>
+      <td></td>
+      <td>Oval</td>
+      <td>Rounded Diamond</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Blue</td>
+      <td>Inverted Y</td>
+      <td>Backward N</td>
+      <td></td>
+      <td></td>
+      <td>Upward Pointing Triangle</td>
+      <td>Three Pointed Star</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Purple</td>
+      <td>X</td>
+      <td>W</td>
+      <td></td>
+      <td></td>
+      <td>Square</td>
+      <td>Four Pointed star</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Red</td>
+      <td>Double Crossed T</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Pentagon</td>
+      <td>Five Pointed Star</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Orange</td>
+      <td>Asterisk</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Hexagon</td>
+      <td>Six Pointed Star</td>
+      <td></td>
+    </tr>
+  </table>
+
+    <h2>Higher Values</h2>
+    <p>
+        Numbers higher than six are written with a combination of the existing symbols. Reading left to right, if the
+        next digit is the same or larger the two numbers are multiplied. If the number is smaller, that number is
+        added. Each increasing and decreasing set of numbers is a chunk. Each chunk is computed first before multiplication
+        or addition is done between chunks. Multiplication is done first, with the addition second. A zero forces the switch from multiplication to addition and ends the chunk.
+    </p>
+    <table>
+    <tr>
+      <th>Earth Standard</th>
+      <th>Structure Version</th>
+        <th>Math</th>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>=0</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>1</td>
+      <td>=1</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>2</td>
+      <td>=2</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>3</td>
+      <td>=3</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>4</td>
+      <td>=4</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>5</td>
+      <td>=5</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>6</td>
+      <td>=6</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>61</td>
+      <td>=6+1</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>62</td>
+      <td>=6+2</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>63</td>
+      <td>=6+3</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>64</td>
+      <td>=6+4</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>65</td>
+      <td>=6+5</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>26</td>
+      <td>=2*6</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>261</td>
+      <td>=(2*6)+1</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>265</td>
+      <td>=(2*6)+5</td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>36</td>
+      <td>=3*6</td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>361</td>
+      <td>=(3*6)+1</td>
+    </tr>
+    <tr>
+      <td>35</td>
+      <td>665</td>
+      <td>=(6*6)+5</td>
+    </tr>
+    <tr>
+      <td>36</td>
+      <td>66</td>
+      <td>=6*6</td>
+    </tr>
+    <tr>
+      <td>37</td>
+      <td>661</td>
+      <td>=(6*6)+1</td>
+    </tr>
+    <tr>
+      <td>41</td>
+      <td>665</td>
+      <td>=(6*6)+5</td>
+    </tr>
+    <tr>
+      <td>42</td>
+      <td>6606</td>
+      <td>=(6*6)+6</td>
+    </tr>
+    <tr>
+      <td>43</td>
+      <td>66061</td>
+      <td>=(6*6)+(6+1)</td>
+    </tr>
+    <tr>
+      <td>47</td>
+      <td>66065</td>
+      <td>=(6*6)+(6+5)</td>
+    </tr>
+    <tr>
+      <td>48</td>
+      <td>66026</td>
+      <td>=(6*6)+(2*6)</td>
+    </tr>
+    <tr>
+      <td>49</td>
+      <td>660261</td>
+      <td>=(6*6)+(2*6+1)</td>
+    </tr>
+
+    <tr>
+      <td>71</td>
+      <td>660565</td>
+      <td>=(6*6)+(5*6+5)</td>
+    </tr>
+    <tr>
+      <td>72</td>
+      <td>266</td>
+      <td>=(2*6*6)</td>
+    </tr>
+    <tr>
+      <td>73</td>
+      <td>2661</td>
+      <td>=(2*6*6)+1</td>
+    </tr>
+
+    <tr>
+      <td>215</td>
+      <td>660565</td>
+      <td>=(5*6*6)+(5*6+5)</td>
+    </tr>
+    <tr>
+      <td>216</td>
+      <td>666</td>
+      <td>=(6*6*6)</td>
+    </tr>
+    <tr>
+      <td>217</td>
+      <td>6661</td>
+      <td>=(6*6*6)+1</td>
+    </tr>
+    </table>
+
+  <div class="warning-note">
+    <strong>FIELD NOTE HIGHER NUMBERS :</strong><br>
+      There are alternates for writing higher value numbers that are also valid.  26 can be writen as 606.  The above
+      table gives the most common version of each number. Current theory is that this base six, Roman style number
+      system is used in the structure as a form of obfuscation.
+  </div>
+</div>
+<nav class="bottom-nav">
+  <div class="nav-container">
+    <a href="lore.html">Index</a>
+  </div>
+</nav>
+</body>
+</html>

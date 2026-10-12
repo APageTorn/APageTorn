@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Import the fonts from the Google Fonts CDN -->
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Architects+Daughter&family=Kalam:wght@400;700&family=Patrick+Hand&display=swap"
+          rel="stylesheet">
+
+    <title>User Manual: Notes from within the Structure</title>
+    <style>
+    body {
+      font-family: 'Patrick Hand', 'Architects Daughter', cursive;
+      line-height: 1.6;
+      color: #2b2b2b;
+      background-color: #F4EBE1;
+      margin: 0;
+      padding: 20px;
+    }
+    nav {
+      padding: 15px 20px;
+      text-align: center;
+      border-bottom: 1px solid #2d2640;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      margin: -20px -20px 30px -20px;
+    }
+    nav a {
+      color: #0f0d17;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 600;
+    }
+    nav a:hover {
+      color: #b794f4; /* Lavender hover */
+    }
+    .entry-container {
+      max-width: 850px;
+      margin: 0 auto;
+      background-color: #F4EBE1;
+      border: 1px solid #2d2640;
+      border-radius: 8px;
+      padding: 30px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    }
+    .notebook-header {
+      border-bottom: 2px dashed #8c7a6b;
+      padding-bottom: 12px;
+      margin-bottom: 25px;
+    }
+    .handwritten-note {
+      font-family: 'Kalam', cursive;
+      font-weight: 700;
+      color: #6b46c1;
+      font-style: italic;
+    }
+    .warning-box {
+      background-color: #F4EBE1;
+      border-left: 4px solid #c96a4b;
+      padding: 12px 16px;
+      margin: 20px 0;
+    }
+    .pictogram-card {
+      background-color: #F4EBE1;
+      padding: 15px;
+      margin: 15px 0;
+    }
+    .gesture-step {
+      margin-left: 20px;
+      border-left: 2px solid #5a5047;
+      padding-left: 15px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+    }
+    th, td {
+      padding: 10px;
+      text-align: left;
+      table-layout: fixed;
+    }
+    table tr th:first-child,
+    table tr td:first-child {
+        width: 130px;
+      text-align: right;
+      vertical-align: top;
+    }
+
+    /* Bottom Navigation Container */
+    .bottom-nav {
+      padding: 15px 20px;
+      border-top: 1px solid #2d2640;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      margin: 30px -20px -20px -20px;
+    }
+
+    /* Inner Container (Matches your 850px central section layout) */
+    .bottom-nav .nav-container {
+      max-width: 850px;
+      margin: 0 auto;       /* Centers the 850px area on the screen */
+      display: flex;
+      justify-content: flex-end; /* Pushes the link to the right edge of the 850px box */
+    }
+
+    /* Matching Link Styles */
+    .bottom-nav a {
+      color: #0f0d17;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    /* Matching Hover Effect */
+    .bottom-nav a:hover {
+      color: #b794f4;
+    }
+
+
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="series.html">Series</a>
+    <a href="lore.html">Lore Vault</a>
+    <a href="about.html">About</a>
+</nav>
+
+<div class="entry-container">
+    <div class="notebook-header">
+        <p class="handwritten-note">[STRUCTURE NOTES // COMPILED BY I. WHITMAN]</p>
+        <h1>THE USER MANUAL</h1>
+        <p><strong>Subject:</strong> Controlling Structure Technology</p>
+        <p><strong>Prerequisite:</strong> Read through <em>Book 1</em> before opening these notes.</p>
+    </div>
+
+    <h2>1. General Interface Philosophy</h2>
+    <p>
+        Whoever built the Structure designed their UI to be intuitive. It includes no language, is controlled by
+        <strong>natural gestures</strong> and features <strong>simplified historical pictograms</strong>. There are
+        symbols in the structure. The symbols around the prize altars and vendors appear to have no meaning and are
+        purely
+        decoration. The only symbols with meaning are used to indicate numbers. The symbols have a value of zero through
+        six in seven different fonts, giving 49 different symbols. See the entry on numbers to learn how higher values
+        than
+        six are written.
+    </p>
+    <p class="handwritten-note">
+        *Note: Unfortunately their definition of natural gestures was based on very different biology. Their historical
+        version of technology does not match the human versions. This means that many of their pictograms are
+        completely indecipherable to the colonists from Sol. --I. W.
+    </p>
+
+    <h2>2. Gesture Controls</h2>
+    <p>Much of the technology embedded in the structure is controlled with gestures. Controls are initiated with a start
+        signal or symbol and completed with an end symbol. Between the control number or numbers of the desired
+        technology
+        is signaled.</p>
+    <p class="handwritten-note">
+        *Note: Companion has only two "fingers". This limits the amount of magic he can cast even more than the five
+        finger limit we humans are dealing with. He replaces signalling with his hands with singing notes. I believe
+        this is an accessibility feature and one of the original builder races must also have had a limited number of
+        fingers. Although this adaptation does not work everywhere.
+        --I. W.
+    </p>
+
+    <div class="pictogram-card">
+        <h3>A. Finger groupings</h3>
+        <p>Much of the offensive and defensive technology is control with the use of finger groupings. Colonists that
+            settled in the structure call this wizard magic.</p>
+        <table>
+            <tr>
+                <td><strong>Start Symbol:</strong></td>
+                <td>The user holds their hand up with all fingers spread and then closes it down into a fist.</td>
+            </tr>
+            <tr>
+                <td><strong>0 Symbol:</strong></td>
+                <td>The closed fist.</td>
+            </tr>
+            <tr>
+                <td><strong>1 Symbol:</strong></td>
+                <td>The open hand, held in front of the user, with all their fingers together and their thumb tight
+                    against
+                    the side of their hand.
+                </td>
+            </tr>
+            <tr>
+                <td><strong>2 Symbol:</strong></td>
+                <td>The open hand, held in front of the user, with fingers held in two groupings. The most common is all
+                    fingers together and the thumb held out from the hand.
+                </td>
+            </tr>
+            <tr>
+                <td><strong>3 Symbol:</strong></td>
+                <td>The open hand, held in front of the user, with fingers held in three groupings. The most common is
+                    index, middle and ring fingers together with the thumb and pinky held out from the hand.
+                </td>
+            </tr>
+            <tr>
+                <td><strong>4 Symbol:</strong></td>
+                <td>The open hand, held in front of the user, with fingers held in four groupings. The most common is
+                    index,
+                    middle together with all other fingers spread.
+                </td>
+            </tr>
+            <tr>
+                <td><strong>5 Symbol:</strong></td>
+                <td>The open hand with all fingers spread.</td>
+            </tr>
+            <tr>
+                <td><strong>6 Symbol:</strong></td>
+                <td>Unknown.</td>
+            </tr>
+            <tr>
+                <td><strong>End Symbol:</strong></td>
+                <td>There are many end symbols. The most known is the throw. This is an empty throw gesture with the
+                    fingers
+                    of the hand held in the last number symbol configuration.
+                </td>
+            </tr>
+        </table>
+        <p class="handwritten-note">
+            *Note: The problem of not being able to signal six with only five fingers limits the number of controls that
+            can
+            be signalled. Humans are unable to use any control that contains a six, and are barred entirely from the six
+            tree control set. --I. W.
+        </p>
+
+
+        <p><strong>Example: Tier 0 light</strong> This control is used to turn the light panels on the ceiling on.</p>
+        <div class="gesture-step">
+            <p>1. Look at light panel.</p>
+            <p>2. Start Symbol: Raise hand, spread fingers wide, make fist.</p>
+            <p>3. Number 0: Loosen fist slightly, form fist again.</p>
+            <p>4. End Symbol: Make a throw gesture with fist. The AR overlay will render a glowing white sphere that
+                appears
+                just beyond the user's hand at the end of the throw. The ball of light will impact the light panel
+                exactly
+                where the user was looking. The light panel will switch on.</p>
+        </div>
+    </div>
+
+    <div class="warning-box">
+        <strong>CRITICAL WARNING ON GESTURE REGISTRATION:</strong><br>
+        When using a throwing motion, the target is not where the user is aiming at, but where they are looking. Do not
+        look
+        at an ally when signalling for an attack.
+    </div>
+
+    <div class="pictogram-card">
+        <h3>B. Squeezed</h3>
+        <p>Squeezes are used to turn on a function in a hand held item. This includes adding an element to a weapon.
+            Colonists that settled in the structure call this warrior magic.</p>
+        <table>
+            <tr>
+                <td><strong>Start Symbol:</strong></td>
+                <td>Tighten their hold on the item one finger at a time, starting with the pinky and ending with the
+                    thumb.
+                    This is followed by a squeeze with all fingers.
+                </td>
+            </tr>
+            <tr>
+                <td><strong>0 Symbol:</strong></td>
+                <td>A squeeze with all fingers.</td>
+            </tr>
+            <tr>
+                <td><strong>1 Symbol:</strong></td>
+                <td>Tighten grip using thumb alone.</td>
+            </tr>
+            <tr>
+                <td><strong>2 Symbol:</strong></td>
+                <td>Tighten grip on index finger, followed by tightening thumb.</td>
+            </tr>
+            <tr>
+                <td><strong>3 Symbol:</strong></td>
+                <td>Tighten grip on middle finger, then index finger, then thumb.</td>
+            </tr>
+            <tr>
+                <td><strong>4 Symbol:</strong></td>
+                <td>Tighten grip on ring finger, middle finger, then index finger, then thumb.</td>
+            </tr>
+            <tr>
+                <td><strong>5 Symbol:</strong></td>
+                <td>Tighten grip one finger at a time, starting with pinky and working down to thumb.</td>
+            </tr>
+            <tr>
+                <td><strong>6 Symbol:</strong></td>
+                <td>Unknown.</td>
+            </tr>
+            <tr>
+                <td><strong>End Symbol:</strong></td>
+                <td>There are many end symbols. This signalling technique is most commonly used to imbue a weapon with
+                    an
+                    element. The end symbol for that is to make the strike.
+                </td>
+            </tr>
+        </table>
+
+
+        <p><strong>Example: Tier 0 light blade</strong> This control is used to imbue light into a weapon, which makes
+            it
+            glow.</p>
+        <div class="gesture-step">
+            <p>1. Hold integrated weapon in a vertical position.</p>
+            <p>2. Start Symbol: Tighten hold one finger at a time from pinky to thumb, squeeze with all fingers, release
+                to
+                normal hold.</p>
+            <p>3. Number 0: Squeeze with all fingers.</p>
+            <p>4. End Symbol: Twist weapon. Weapon will glow, illuminating surroundings. The spell will cancel if the
+                weapon
+                is tilted more than ten degrees off vertical.</p>
+        </div>
+
+        <div class="warning-box">
+            <strong> WARNING ON LIGHT BLADE SPELL:</strong><br>
+            Light Blade only works on integrated weapons, or weapons manufactured using structure technology or found
+            within. Most imbuing spells will work on any weapon, including knives brought in from the colony
+            manufactory. It
+            will even work on sticks if they are used as a weapon.
+        </div>
+    </div>
+
+    <div class="pictogram-card">
+        <h3>C. Tapped</h3>
+        <p>Taps are used to control function in tools and appliances. Since this includes the tools used for
+            manufacturing,
+            colonists that settled in the structure call this crafter magic.</p>
+        <table>
+            <tr>
+                <td><strong>Start Symbol:</strong></td>
+                <td>Tap one finger at a time, starting with the pinky and ending with the thumb, on the surface of the
+                    tool.
+                    Follow by tapping the tool with the palm of the hand.
+                </td>
+            </tr>
+            <tr>
+                <td><strong>0 Symbol:</strong></td>
+                <td>Tap the tool with the palm of the hand.</td>
+            </tr>
+            <tr>
+                <td><strong>1 Symbol:</strong></td>
+                <td>Tap the tool with the thumb.</td>
+            </tr>
+            <tr>
+                <td><strong>2 Symbol:</strong></td>
+                <td>Tap the tool with the index finger, followed by the thumb.</td>
+            </tr>
+            <tr>
+                <td><strong>3 Symbol:</strong></td>
+                <td>Tap the tool with the middle finger, then index finger, then thumb.</td>
+            </tr>
+            <tr>
+                <td><strong>4 Symbol:</strong></td>
+                <td>Tap the tool with the ring finger, middle finger, index finger, then thumb.</td>
+            </tr>
+            <tr>
+                <td><strong>5 Symbol:</strong></td>
+                <td>Tap the tool with one finger at a time, starting with pinky and working down to thumb.</td>
+            </tr>
+            <tr>
+                <td><strong>6 Symbol:</strong></td>
+                <td>Unknown.</td>
+            </tr>
+            <tr>
+                <td><strong>End Symbol:</strong></td>
+                <td>There are many end symbols. One end symbol it to tap all fingers at once.</td>
+            </tr>
+        </table>
+
+
+        <p><strong>Example: Tier 0 burn stick</strong> This control is set a stick on fire. It is very useful for
+            starting
+            campfires.</p>
+        <div class="gesture-step">
+            <p>1. Set stick on ground.</p>
+            <p>2. Start Symbol: Tap one finger at a time from pinky to thumb, touch stick palm of hand.</p>
+            <p>3. Number 0: Tap one finger at a time from pinky to thumb.</p>
+            <p>4. End Symbol: Tap all fingers together, stick will ignite.</p>
+        </div>
+
+        <p class="handwritten-note">
+            *Note: Utility spells, like changing the temperature of the water in a sink, do not require a start or stop
+            symbol. They also don't include a learning period. To make the water hotter tap five on the edge of the sink
+            while the water is running. To make it colder, tap three. --I. W.
+        </p>
+    </div>
+
+    <h2>3. Written</h2>
+    <p> Control functionality can also be signaled with written numbers. This method is called enchanting.</p>
+    <p>Enchanting is used to add new properties to items. The font, size, number and distribution of the symbols over
+        the surface of the item to be enchanted all affect the strength, functionality and lifetime of the
+        enchantment.</p>
+    <div class="pictogram-card">
+        <table>
+            <tr>
+                <td><strong>Start Symbol:</strong></td>
+                <td>Starting with 6, write the numbers 6, 5, 4, 3, 2, 1 in a counter-clockwise circle. Write zero in the
+                    center. All numbers must be written in the same structure font
+                </td>
+            </tr>
+            <tr>
+                <td><strong>0-6 Symbols:</strong></td>
+                <td>These are the same symbols used for each number in the start symbol.</td>
+            </tr>
+            <tr>
+                <td><strong>End Symbol:</strong></td>
+                <td>To finish the enchantment the start symbol is erased. The symbols of the enchantment will sink into
+                    the
+                    substrate leaving only a slight water look to the surface to indicate it is enchanted.
+                </td>
+            </tr>
+        </table>
+        <p class="handwritten-note">
+            *Note: In enchantment the 6 symbol is finally accessible for humans. Since the 6 tree is mass or momentum,
+            this allows enchantments to reduce the weight of a bag, or increase the speed of an arrow. --I. W.
+        </p>
+    </div>
+    <h2>4. Map</h2>
+    <p>A virtual map is available to all users. The map is of the structure only.  It does not include surface
+        topography.  It only includes area the user has already visited.  It includes all area around the person
+        that could have been seen, even if they didn't look in that direction. It does not include anything that
+        can't be seen, such as area behind closed doors.
+    </p>
+    <div class="pictogram-card">
+        <table>
+            <tr>
+                <td><strong>Opening:</strong></td>
+                <td>Hold one hand palm up, with fingers parrallel to their body.  Lay the other hand
+                    on top, palm down, with fingers pointing away from the body, or 90 degrees to the first hand.
+                    Rotate the second hand, using the pinky as a hinge point until the second hand is also palm up.
+                    Once open the second hand can be dropped.  Right and left hands are interchangeable.
+                </td>
+            </tr>
+            <tr>
+                <td><strong>Navigation:</strong></td>
+                <td>The map contains a symbol that resembles an X with an L wrapped around it.  This is used for
+                    navigation. The bottom line of the L is east-west.  The side line of the L is south-north. The
+                    X lines of the X zooms in and out and up and down levels.
+                </td>
+            </tr>
+            <tr>
+                <td><strong>Closing:</strong></td>
+                <td>Moving suddenly or dropping both hands closes the map.
+                </td>
+            </tr>
+        </table>
+        <p class="handwritten-note">
+            *Note: The map is drawn with South at the top --I. W.
+        </p>
+    </div>
+    <h2>4. Individual</h2>
+    <p>Each person in the game has a personal interface. This is the hardest of all interfaces to decipher. Most of
+        its functionality is unknown. It can be used to decipher the wall inscriptions found in the structure. The
+        font it appears in changes over time.  This change in font has been defined as a change in the person's tier,
+        as it does correlate with a users mastery of more complex controls.
+    </p>
+    <div class="pictogram-card">
+        <table>
+            <tr>
+                <td><strong>Opening:</strong></td>
+                <td>Hold eyes completely steady.  A blinking light will appear at the edge of the users vision. Usher
+                    this light to the point the user is looking out using hand motions.   Do not move eyes. When
+                    the point of light is dead center, it will expand out into the personal interface.
+                </td>
+            </tr>
+            <tr>
+                <td><strong>Use:</strong></td>
+                <td>The interface is a mix of structure numbers and icons. The icons can be selected. Some open
+                    additional tools.  Others turn solid or transparent, which defines a choice or setting. Once
+                    open some movement of the user's eyes is allowed.  See Closing.
+                </td>
+            </tr>
+            <tr>
+                <td><strong>Closing:</strong></td>
+                <td>Moving suddenly closes the interface.
+                </td>
+            </tr>
+        </table>
+    </div>
+    <h2>5. Physical</h2>
+    <p>There are physical interfaces also built into the game.  The interfaces are tied to a physical item. Touching
+        the item opens the interface. The interface appears on the linked item. The interfaces are composed of numbers
+        and icons.  Icons and numbers can be selected and dragged using touch. Stepping away from the item closes the
+        interface.
+    </p>
+    <div class="pictogram-card">
+        <h3>A. Prize Altar</h3>
+        <p>This interface item spawns in random rooms in the structure. It appears as a stone shelf with a smooth flat
+            panel of stone directly above it.  It is on this panel that the interface appears. Symbols are carved
+            into the wall around the flat panel.  They are decoration only.  There is one in every housing unit.
+        </p>
+        <p>The Prize Altar function is to put item in and out of inventory. Only integrated items can be place into
+            inventory. It can also be used to add and remove coins from the user's account and check the current balance.
+        </p>
+
+    </div>
+    <div class="pictogram-card">
+        <h3>B. Vendor</h3>
+        <p>This interface item spawns in select rooms in the structure. It appears as a stone shelf with a smooth flat
+            panel of stone directly above it.  It is on this panel that the interface appears. Symbols are carved
+            into the wall around the flat panel.  They are decoration only. They are a different set than the
+            ones on prize altars.  There is one in every housing square in the market area, and a food only one
+            in the kitchen of the inn. They can appear in ruined shops and galleries.
+        </p>
+        <p> A user can sell items they are carrying to the vendor, or purchase items from the vendor from a list.
+            The list of available items vary with each vendor.  The vendors with the largest available inventory
+            are the ones that appear in the market areas of squares.
+        </p>
+        <p>Most bought items appear on the shelf.  Rarely, in market square's only, bought items appear in front of the
+            Vendor on the ground.  All items sold to the vendor must be placed on the shelf. When they disappear the
+            purchase price is added to the user's account. A vendor incorporates a pay surface for payments.  It can
+            be used to check a user's balance. It can not be used to add or pull coins directly to a users account.
+        </p>
+    </div>
+    <div class="pictogram-card">
+        <h3>C. Shop Interface</h3>
+        <p>Every shop in a square has a service counter.  The shop's interface is built into the counter.
+        </p>
+        <p> The shop interface includes a pay surface.  The pay surface will accept physical coins or coins from
+            a customer's account. A customer's account balance can not be viewed.
+        </p>
+    </div>
+    <div class="pictogram-card">
+        <h3>D. Market Pay Surfaces</h3>
+        <p>The market area of a square includes a set of small pillars.  The top of these pillars are pay surfaces
+            where a customer can pay a seller in physical coins or from their account, see Shadow Coin Payment below. There are no markings on these
+            Pillars. Payment can be made with physical coins by setting the coins on the pay surface. When enough coins are present
+            to cover the price, the paid coins will disappear, to be replaced by any change owed.
+        </p>
+        <p class="handwritten-note">
+            *Note: Physical coins are not accepted until enough coins are present to cover the price.  The coins then
+            disappear, to be replaced by any change owed.  --I. W.
+        </p>
+
+    </div>
+    <div class="pictogram-card">
+        <h3>E. Shadow Coin Payment</h3>
+        <p> Payment for rent on a room, shop or secured storage is done via shadow coins.  Shadow coins are a
+            set of translucent coins that appear on doors or surfaces.  The number and type of coin that appear
+            match the amount owed.  A user makes a gesture like they are pulling coins from a purse or bag on their
+            belt. The amount is deducted from their account.
+        </p>
+    </div>
+
+</div>
+<nav class="bottom-nav">
+  <div class="nav-container">
+    <a href="lore.html">Index</a>
+  </div>
+</nav>
+
+</body>
+</html>

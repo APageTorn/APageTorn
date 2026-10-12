@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Engineered Magic Series | D. R. Brown</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      color: #e2e8f0;
+      background-color: #0f0d17; /* Deep purple-tinted black */
+      margin: 0;
+      padding: 0;
+    }
+    nav {
+      background-color: #181524;
+      padding: 15px 20px;
+      text-align: center;
+      border-bottom: 1px solid #2d2640;
+    }
+    nav a {
+      color: #e2e8f0;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 600;
+    }
+    nav a:hover {
+      color: #b794f4; /* Lavender hover */
+    }
+
+    /* Widescreen Series Banner */
+    .banner-container {
+      width: 100%;
+      background-color: #181524;
+      border-bottom: 2px solid #6b46c1;
+      text-align: center;
+    }
+    .series-banner {
+      width: 100%;
+      max-width: 1376px;
+      height: auto;
+      max-height: 500px;
+      object-fit: cover;
+      object-position: top center;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .section-title {
+      border-bottom: 2px solid #6b46c1;
+      padding-bottom: 8px;
+      margin-bottom: 25px;
+      color: #e9d5ff;
+    }
+
+    /* Book Listing Grid */
+    .book-list {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      margin-bottom: 50px;
+    }
+    .book-card {
+      background: #181524;
+      border: 1px solid #2d2640;
+      border-radius: 8px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+    @media (min-width: 600px) {
+      .book-card {
+        flex-direction: row;
+      }
+    }
+    .book-cover {
+      width: 160px;
+      height: auto;
+      border-radius: 4px;
+      flex-shrink: 0;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+      margin: 0 auto;
+    }
+    .book-details {
+      flex-grow: 1;
+    }
+    .book-details h3 {
+      margin-top: 0;
+      color: #f3e8ff;
+      font-size: 1.3rem;
+    }
+    .book-details p {
+      color: #cbd5e1;
+    }
+
+    /* Upcoming Pipeline List */
+    .pipeline-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+      margin-bottom: 50px;
+    }
+    .pipeline-card {
+      background-color: #13101c;
+      border: 1px dashed #3c2f54;
+      border-radius: 6px;
+      padding: 15px;
+      text-align: center;
+    }
+    .pipeline-card h4 {
+      margin: 0 0 5px 0;
+      color: #b794f4;
+    }
+    .pipeline-card p {
+      margin: 0;
+      font-size: 0.85rem;
+      color: #94a3b8;
+    }
+
+    /* Reviews Section */
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+      margin-bottom: 50px;
+    }
+    .review-card {
+      background-color: #181524;
+      border: 1px solid #2d2640;
+      border-radius: 8px;
+      padding: 20px;
+      border-left: 4px solid #b794f4;
+    }
+    .review-quote {
+      font-style: italic;
+      color: #e2e8f0;
+      margin-bottom: 12px;
+      font-size: 0.95rem;
+    }
+    .review-source {
+      font-size: 0.85rem;
+      color: #c084fc;
+      font-weight: bold;
+    }
+
+    /* Lore Banner */
+    .lore-banner {
+      background-color: #13101c;
+      color: #e2e8f0;
+      padding: 30px;
+      border-radius: 8px;
+      border-left: 5px solid #b794f4;
+      border-right: 1px solid #2d2640;
+      border-top: 1px solid #2d2640;
+      border-bottom: 1px solid #2d2640;
+      margin-bottom: 40px;
+    }
+    .lore-banner h2 {
+      color: #c084fc;
+      margin-top: 0;
+    }
+
+    /* Buttons */
+    .btn {
+      display: inline-block;
+      background-color: #7e22ce;
+      color: white;
+      padding: 8px 16px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      margin-top: 10px;
+      font-size: 0.9rem;
+    }
+    .btn:hover {
+      background-color: #9333ea;
+    }
+    .btn-lore {
+      background-color: #b794f4;
+      color: #0f0d17;
+      margin-right: 10px;
+    }
+    .btn-lore:hover {
+      background-color: #c084fc;
+    }
+       /* Inner Container (Matches your 850px central section layout) */
+    .lore-banner .lore-container {
+      max-width: 850px;
+      margin: 0 auto;       /* Centers the 850px area on the screen */
+      display: flex;
+      justify-content: flex-end; /* Pushes the link to the right edge of the 850px box */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Standard Navigation Header -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="series.html">Series</a>
+    <a href="lore.html">Lore Vault</a>
+    <a href="about.html">About</a>
+  </nav>
+
+  <!-- Widescreen Patreon Banner (1376x768) -->
+  <div class="banner-container">
+    <a href="https://www.amazon.com/dp/B0D3SWW5NC">
+    <img src="images/series_banner.jpg" alt="Engineered Magic Series Banner" class="series-banner" width="1376" height="768">
+    </a>
+  </div>
+
+  <div class="container">
+
+    <!-- PUBLISHED BOOKS SECTION -->
+    <h2 class="section-title">Published Books</h2>
+    <div class="book-list">
+
+      <div class="book-card">
+        <img src="images/em_book1.png" alt="Engineered Magic Cover" class="book-cover">
+        <div class="book-details">
+          <h3>Book 1: Engineered Magic</h3>
+          <p>A sub-light colony ship completes its 672-year journey to Sigma Draconis, only for the colonists to discover a underground world spanning structure that hosts and runs a Game.</p>
+          <a href="https://www.amazon.com/dp/B0DHB8VYSY" class="btn">View on Amazon</a>
+        </div>
+      </div>
+
+      <div class="book-card">
+        <img src="images/em_book2.png" alt="A Lesser God Cover" class="book-cover">
+        <div class="book-details">
+          <h3>Book 2: A Lesser God</h3>
+          <p>The tier six wizard Grandmother and her team travel deep into the structure. Their differing strengths and interests allow the team to learn more skills, master more magic, craft more items and complete more quests than any single player could, even if the single player is a lesser god.</p>
+          <a href="https://www.amazon.com/dp/B0F75D7YR5" class="btn">View on Amazon</a>
+        </div>
+      </div>
+
+      <div class="book-card">
+        <img src="images/em_book3.png" alt="Chief Engineer Cover" class="book-cover">
+        <div class="book-details">
+          <h3>Book 3: Chief Engineer</h3>
+          <p>Grandmother's team travel deep into the structure. They will complete quests, reveal new crafts and spells and make new allies in their search for the prize. They discover unexpected secrets along the way.</p>
+          <a href="https://www.amazon.com/dp/B0FJMX5MWD" class="btn">View on Amazon</a>
+        </div>
+      </div>
+
+      <div class="book-card">
+        <img src="images/em_book4.png" alt="Trueborn Cover" class="book-cover">
+        <div class="book-details">
+          <h3>Book 4: Trueborn</h3>
+          <p>Explore the pivot point in one woman’s life that shadows all her decisions and actions thereafter.  Journey with Irene Whitman as she navigates the structure as a woman, wizard and engineer.</p>
+          <p>This is a story of war.</p>
+          <a href="https://www.amazon.com/dp/B0GCM3BZMH" class="btn">View on Amazon</a>
+        </div>
+      </div>
+
+      <div class="book-card">
+        <img src="images/em_book5.png" alt="The Speedwell Academy" class="book-cover">
+        <div class="book-details">
+          <h3>Book 5: The Speedwell Academy</h3>
+          <p>Explore how the generational colony ship Speedwell transforms into the Speedwell Academy. They will teach all forms of magic at the academy including the magic of science. </p>
+          <p>We are the Wizard’s Tower!</p>
+          <a href="https://www.amazon.com/dp/B0GJGD6H72" class="btn">View on Amazon</a>
+        </div>
+      </div>
+
+      <div class="book-card">
+        <img src="images/em_book6.png" alt="A Wrench in her Hand Cover" class="book-cover">
+        <div class="book-details">
+          <h3>Book 6: The Wizard's Tower</h3>
+          <p>Chief Engineer Irene Whitman is the architect of the Speedwell Academy’s mission to build a better future for all the residents of the colony. She wants the academy to teach more subjects to more students.  In order to do that she will seek out new instructors, crafts and magics. The first term isn’t over yet, and Irene is already working on improvements for the next one.</p>
+          <p>Welcome to the Speedwell Academy.</p>
+          <a href="https://www.amazon.com/dp/B0GZT325GP" class="btn">View on Amazon</a>
+        </div>
+      </div>
+
+      <div class="book-card">
+        <img src="images/em_book7.png" alt="A Wrench in her Hand Cover" class="book-cover">
+        <div class="book-details">
+          <h3>Book 7: A Wrench in her Hand</h3>
+          <p>In the distant Sigma Draconis system, Control is hiding a dangerous secret about the world of the Game. The secret has driven Control for millennia as it looked for a solution. This problem is the reason the original species abandoned the Game. Control has tried repeatedly to find an engineer that can fix it. All of them failed.</p>
+          <p>Irene Whitman is the latest Engineer for the Game. It is time for her to give it a try.</p>
+          <p> An engineer’s work is never done.</p>
+          <a href="https://www.amazon.com/dp/B0H8NG92YF" class="btn">View on Amazon</a>
+        </div>
+      </div>
+
+      <div class="book-card">
+        <img src="images/em_book8.png" alt="Abandoned by the Gods Cover" class="book-cover">
+        <div class="book-details">
+          <h3>Book 8: Abandoned by the Gods</h3>
+          <p>Valin holds a deep hatred for the elven kingdom and the King that rules it. Valin's story of the species forty player held as a slave in the King's court is enough to send Grandmother's team down to the southern continent to see it for themselves.</p>
+          <a href="https://www.patreon.com/collection/1564820" class="btn">View on Patreon</a>
+        </div>
+      </div>
+
+      <div class="book-card">
+        <img src="images/em_book9.png" alt="Dragon Fire Ignites Cover" class="book-cover">
+        <div class="book-details">
+          <h3>Book 9: Dragon Fire Ignites</h3>
+          <p> Irene Whitman, youngest daughter of the mad queen, Chief Engineer of the Speedwell, Grandmother of Home Square, System Engineer for the Game and a silver tier six wizard has decided it is time to find the Prize.</p>
+          <a href="https://www.patreon.com/collection/1670569" class="btn">View on Patreon</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- UPCOMING PIPELINE SECTION -->
+    <h2 class="section-title">Upcoming Releases</h2>
+    <div class="pipeline-grid">
+      <div class="pipeline-card">
+        <h4>Book 10: The Titans fell to Zeus</h4>
+        <p>In Pipeline / Production</p>
+      </div>
+      <div class="pipeline-card">
+        <h4>Book 11: The Dragon Stirs</h4>
+        <p>In Pipeline</p>
+      </div>
+      <div class="pipeline-card">
+        <h4>Book 12: Across the Dark Sea</h4>
+        <p>In Pipeline</p>
+      </div>
+      <div class="pipeline-card">
+        <h4>Book 13: Tunde</h4>
+        <p>In Pipeline</p>
+      </div>
+      <div class="pipeline-card">
+        <h4>Book 14: Finn</h4>
+        <p>In Pipeline</p>
+      </div>
+    </div>
+
+    <!-- READER REVIEWS SECTION -->
+    <h2 class="section-title">What Readers Are Saying</h2>
+    <div class="reviews-grid">
+      <div class="review-card">
+        <div class="review-quote">"There is exploration with a deep sense of curiosity and wonder, always looking at "what if" and "how does this work", incorporating science-like examinations into the story. There is also a deep sense of friendship of the core group, as well as exploration of human nature and storytelling in this book."</div>
+        <div class="review-source">— Amazon Reviewer</div>
+      </div>
+      <div class="review-card">
+        <div class="review-quote">"Incredible world building and magic system! There’s lots of detail, it’s logical without getting too technical, and just enough left unexplained/unknown that gives it depth."</div>
+        <div class="review-source">— RoyalRoad Reader</div>
+      </div>
+      <div class="review-card">
+        <div class="review-quote">"Great story reminiscent of Nivens Dream Park. Great lore and characterization given through showing and not just exposition. Colonists find that the new world they are on is run by a Control AI with its own augmented reality nanobots with life and death struggles built in. I look forward to reading the next few books."</div>
+        <div class="review-source">— Goodreads Reviewer</div>
+      </div>
+    </div>
+
+    <!-- LORE VAULT FOOTER CALLOUT -->
+    <div id="lore" class="lore-banner">
+      <h2>Explore the Universe Archives</h2>
+      <p>Want to see the colony ship deck layouts, read declassified post-mission debriefs, or decipher the 0–7 numerical command trees?</p>
+      <div class="lore-container">
+          <a href="lore.html" class="btn btn-lore">Documentation</a>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>

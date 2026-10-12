@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Import the fonts from the Google Fonts CDN -->
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Architects+Daughter&family=Kalam:wght@400;700&family=Patrick+Hand&display=swap"
+          rel="stylesheet">
+
+    <title>User Manual: Notes from within the Structure</title>
+    <style>
+    body {
+      font-family: 'Patrick Hand', 'Architects Daughter', cursive;
+      line-height: 1.6;
+      color: #2b2b2b;
+      background-color: #F4EBE1;
+      margin: 0;
+      padding: 20px;
+    }
+    nav {
+      padding: 15px 20px;
+      text-align: center;
+      border-bottom: 1px solid #2d2640;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      margin: -20px -20px 30px -20px;
+    }
+    nav a {
+      color: #0f0d17;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 600;
+    }
+    nav a:hover {
+      color: #b794f4; /* Lavender hover */
+    }
+    .entry-container {
+      max-width: 850px;
+      margin: 0 auto;
+      background-color: #F4EBE1;
+      border: 1px solid #2d2640;
+      border-radius: 8px;
+      padding: 30px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    }
+    .notebook-header {
+      border-bottom: 2px dashed #8c7a6b;
+      padding-bottom: 12px;
+      margin-bottom: 25px;
+    }
+    .handwritten-note {
+      font-family: 'Kalam', cursive;
+      font-weight: 700;
+      color: #6b46c1;
+      font-style: italic;
+    }
+    .warning-box {
+      background-color: #F4EBE1;
+      border-left: 4px solid #c96a4b;
+      padding: 12px 16px;
+      margin: 20px 0;
+    }
+    .pictogram-card {
+      background-color: #F4EBE1;
+      padding: 15px;
+      margin: 15px 0;
+    }
+    .gesture-step {
+      margin-left: 20px;
+      border-left: 2px solid #5a5047;
+      padding-left: 15px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+    }
+    th, td {
+      padding: 10px;
+      text-align: left;
+      table-layout: fixed;
+    }
+    th {
+      color: #6b46c1;
+      border-bottom: 2px solid #374151;
+    }
+
+    /* Bottom Navigation Container */
+    .bottom-nav {
+      padding: 15px 20px;
+      border-top: 1px solid #2d2640;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      margin: 30px -20px -20px -20px;
+    }
+
+    /* Inner Container (Matches your 850px central section layout) */
+    .bottom-nav .nav-container {
+      max-width: 850px;
+      margin: 0 auto;       /* Centers the 850px area on the screen */
+      display: flex;
+      justify-content: flex-end; /* Pushes the link to the right edge of the 850px box */
+    }
+
+    /* Matching Link Styles */
+    .bottom-nav a {
+      color: #0f0d17;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    /* Matching Hover Effect */
+    .bottom-nav a:hover {
+      color: #b794f4;
+    }
+
+
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="series.html">Series</a>
+    <a href="lore.html">Lore Vault</a>
+    <a href="about.html">About</a>
+</nav>
+
+<div class="entry-container">
+    <div class="notebook-header">
+        <p class="handwritten-note">[STRUCTURE NOTES // COMPILED BY I. WHITMAN]</p>
+        <h1>THE USER MANUAL</h1>
+        <p><strong>Subject:</strong> Schools of Magic</p>
+        <p><strong>Prerequisite:</strong> Read through <em>Book 7</em> before opening these notes.</p>
+    </div>
+
+    <h2>Definition</h2>
+    <p>
+        There are between four and seven known schools of crafting. This uncertainty arises from how humans define
+        the schools.
+    </p>
+    <p>
+        Everyone agrees that Enchanting, Chemistry and Group Magic are separate magic schools.
+    </p>
+    <p>
+        Wizard spells, which are cast with the hands alone, could be split from Warrior skills that require a weapon.
+        Only shield spells can be cast with and without a shield. If casting magic with an item is one type of magic,
+        then Warrior skills and Crafter skills, which require a tool, are the same magic school. Or maybe they aren't
+        since Warriors imbue an element into a weapon and Crafters control tools.
+    </p>
+    <p>
+        To make it more confusing, all those Wizard, Warrior and Crafter Hand spells could be split a different way.
+        Hand spells are cast with three methods, finger grouping, squeezing, tapping. Each of these could be
+        considered a magic school.
+    </p>
+    <p>
+        Magic that is cast with Song could be considered a separate magic, only sound can be used to cast most Wizard,
+        Warrior and Crafting Spells, but not all.
+    </p>
+    <p>
+        So it could be Hand Cast, (with sound as an accessibility feature), Chemistry, Enchanting and Group Magic, or
+        it could be Wizard, (finger grouping), Warrior, (squeezing), Crafting, (tapping), Song, Enchanting, Chemistry
+        and Group Magic.
+    </p>
+    <p>
+        The Game is in many ways adaptive. Players who are very imprecise in their signaling can end up limited in
+        what spells they can cast as Control interprets large variations down to a single symbol, leaving no room
+        for additional symbols to be signalled. Additionally, the Game seldom limits a player to only one way to
+        accomplish a goal. Many magic actions that can be accomplished with Hand magic can also be done with one
+        of accepted separate schools. Usually one of these methods is stronger than the other, but they are
+        functionally equivalent. If Hand signaling and Song were designed as separate magics but had considerable
+        overlap between them, the Game's adaptive algorithm may have merged the two over time.
+    </p>
+    <p>
+        From this point of view Song is not an accessibility feature alone. Rather all the different magic schools are
+        accessibility features that were designed to match the original species. There were eight founding species, but
+        species 0 never played the Game. If there were 7 schools, they are all accounted for, and if there were 8,
+        only one is missing.
+    </p>
+
+    <div class="warning-note">
+        <strong>NOTE :</strong><br>
+        Beyond this point we will consider the magic schools as: Wizard, (finger grouping), Warrior, (squeezing),
+        Crafting, (tapping), Song, Enchanting, Chemistry and Group Magic.
+    </div>
+
+    <h2>Magic Schools </h2>
+    <p>A brief description of each Magic School, along with examples.</p>
+    <div class="pictogram-card">
+        <h3>Wizard (finger grouping)</h3>
+
+        <p><strong>Description: </strong>Unarmed Defense<br>
+            Spells are signaled with hands alone. In this method the magic tree number are signaled by finger
+            orientation.
+        </p>
+        <p>
+            Wizards can throw <i>lightning</i>, raise a <i>fire wall</i> and <i>heal*</i> a player.
+        </p>
+
+        <div class="warning-box">
+            <strong>*</strong> Wizard <i>heal</i> is addictive if cast between matching colors and should not be used
+            except in cases of life and death.  See the section dedicated to cast <i>heal</i> for further details.
+        </div>
+    </div>
+    <div class="pictogram-card">
+        <h3>Warrior (squeezes)</h3>
+
+        <p><strong>Description: </strong>Imbuing Elements<br>
+            Spells are signaled by squeezing the handle of a weapon. The order and pattern
+            of the squeezes with individual fingers determine the magic tree number.
+        </p>
+        <p>
+            Warriors imbue weapons with elemental powers, coating them in <i>ice</i> or </i><i>fire</i> or
+            reducing/increasing their <i>mass</i>.
+        </p>
+    </div>
+    <div class="pictogram-card">
+        <h3>Crafter (taps)</h3>
+
+        <p><strong>Description: </strong> Creating Magical Items<br>
+            Spells that control tools are signaled by tapping on the tools surface. This method is also used
+            on built in utility items like sinks and bathing pools.
+        </p>
+        <p>
+            Crafters can manufacture armor, weapons and furniture.
+        </p>
+    </div>
+    <div class="pictogram-card">
+        <h3>Song</h3>
+
+        <p><strong>Description: </strong>Casting onto a Group<br>
+            Spells are sung, with individual notes defining the magic tree numbers.
+        </p>
+
+        <p>
+            Song practitioners can <i>conceal</i> a group, enhance their <i>speed</i> or increase their
+            <i>recovery</i> rate.
+        </p>
+
+        <div class="handwritten-note">
+            *Note:
+            Because of the overlap with Wizard, Warrior and Crafter spells, this is the most difficult of the
+            magic schools to define. To find its original use, we need to determine which function it
+            performs better than the other three Hand casting methods. Casting spells on a group is the leading
+            contender. This group targeting magic allows a Song practitioner to enhance all members of a group
+            at once, since everyone that hears the sound is equally affected. They can also efficiently
+            drive multi-passenger travel craft like boats, making Travel Magic, the next potential contender.
+        </div>
+    </div>
+    <div class="pictogram-card">
+        <h3>Enchanting</h3>
+
+        <p><strong>Description: </strong>Adding Magic to an Item.<br>
+            Magic tree numbers are indicated with written symbols, and at tier four and above, with the color
+            the symbol is written in.
+        </p>
+
+        <p>
+            Enchanters can reduce the <i>weight</i> of a bag, add <i>swiftness</i> to a pair of boots and
+            add the ability to self <i>fill</i> to a water flask.
+        </p>
+    </div>
+    <div class="pictogram-card">
+        <h3>Chemistry</h3>
+
+        <p><strong>Description: </strong>Enhancing a Player<br>
+            Magic tree numbers are indicated with chemicals, animal parts and plants.  They are combined to make
+            powders, creams and potions which enhance a Player when applied or drank.
+        </p>
+
+        <p>
+            Chemists produce powders, creams and elixirs.  When applied or drank they can <i>disguise</i> a Player,
+            allow them to <i>breathe</i> underwater or <i>heal</i> them without addiction.
+        </p>
+    </div>
+    <div class="pictogram-card">
+        <h3>Group</h3>
+
+        <p><strong>Description: </strong>Altering the Landscape<br>
+            Cast by a group of practitioners, Magic tree number is indicated by the position of the individual
+            who makes the indication.  Known indicators that work are clapping, pounding a drum, and turning in place.
+            The same indication must be used by all Players in the group.
+        </p>
+
+        <p>
+            A Group can <i>raise</i> or <i>lower</i> land, <i>plant</i> crops and <i>cultivate</i> them.
+        </p>
+        <div class="warning-box">
+            <strong>NOTE :</strong><br>
+            This is not to be confused with Song. Group magic is cast by a group, while Song is cast by an
+            individual on a group.
+        </div>
+    </div>
+
+</div>
+<nav class="bottom-nav">
+    <div class="nav-container">
+        <a href="lore.html">Index</a>
+    </div>
+</nav>
+</body>
+</html>

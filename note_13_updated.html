@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Import the fonts from the Google Fonts CDN -->
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Architects+Daughter&family=Kalam:wght@400;700&family=Patrick+Hand&display=swap"
+          rel="stylesheet">
+
+    <title>User Manual: Notes from within the Structure</title>
+    <style>
+    body {
+      font-family: 'Patrick Hand', 'Architects Daughter', cursive;
+      line-height: 1.6;
+      color: #2b2b2b;
+      background-color: #F4EBE1;
+      margin: 0;
+      padding: 20px;
+    }
+    nav {
+      padding: 15px 20px;
+      text-align: center;
+      border-bottom: 1px solid #2d2640;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      margin: -20px -20px 30px -20px;
+    }
+    nav a {
+      color: #0f0d17;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 600;
+    }
+    nav a:hover {
+      color: #b794f4; /* Lavender hover */
+    }
+    .entry-container {
+      max-width: 850px;
+      margin: 0 auto;
+      background-color: #F4EBE1;
+      border: 1px solid #2d2640;
+      border-radius: 8px;
+      padding: 30px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    }
+    .notebook-header {
+      border-bottom: 2px dashed #8c7a6b;
+      padding-bottom: 12px;
+      margin-bottom: 25px;
+    }
+    .handwritten-note {
+      font-family: 'Kalam', cursive;
+      font-weight: 700;
+      color: #6b46c1;
+      font-style: italic;
+    }
+    .warning-box {
+      background-color: #F4EBE1;
+      border-left: 4px solid #c96a4b;
+      padding: 12px 16px;
+      margin: 20px 0;
+    }
+   /* Species Card Styles */
+    .species-card {
+      background-color: #F4EBE1;
+      border: 1px solid #2d2640;
+      border-radius: 6px;
+      padding: 22px;
+      margin: 25px 0;
+    }
+
+    .species-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      border-bottom: 1px solid #2d2640;
+      padding-bottom: 8px;
+      margin-bottom: 15px;
+    }
+
+    .species-title {
+      font-family: 'Patrick Hand', 'Architects Daughter', cursive;
+      font-size: 1.3rem;
+      font-weight: bold;
+      color: #6b46c1;
+      margin: 0;
+    }
+
+    .species-number {
+      font-family: 'Patrick Hand', 'Architects Daughter', cursive;
+      font-size: 0.85rem;
+      color: red;
+      background-color: #F4EBE1;
+      padding: 3px 8px;
+      border-radius: 4px;
+      border: 1px solid #2d2640;
+    }
+
+    .spec-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 10px;
+      margin-bottom: 15px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 0.9rem;
+      background-color: #F4EBE1;
+      padding: 10px;
+      border-radius: 4px;
+    }
+
+    .spec-item {
+      color: #6b46c1;
+    }
+
+    .spec-item strong {
+      color: #6b46c1;
+    }
+
+    ul {
+      margin-top: 5px;
+    }
+
+    /* Bottom Navigation Container */
+    .bottom-nav {
+      padding: 15px 20px;
+      border-top: 1px solid #2d2640;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      margin: 30px -20px -20px -20px;
+    }
+
+    /* Inner Container (Matches your 850px central section layout) */
+    .bottom-nav .nav-container {
+      max-width: 850px;
+      margin: 0 auto;       /* Centers the 850px area on the screen */
+      display: flex;
+      justify-content: flex-end; /* Pushes the link to the right edge of the 850px box */
+    }
+
+    /* Matching Link Styles */
+    .bottom-nav a {
+      color: #0f0d17;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    /* Matching Hover Effect */
+    .bottom-nav a:hover {
+      color: #b794f4;
+    }
+
+
+
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="series.html">Series</a>
+    <a href="lore.html">Lore Vault</a>
+    <a href="about.html">About</a>
+</nav>
+
+<div class="entry-container">
+    <div class="notebook-header">
+        <p class="handwritten-note">[RESEARCH LOG // COMPILED BY I. WHITMAN]</p>
+        <h1>KNOWN PLAYER SPECIES</h1>
+        <p><strong>Subject:</strong> System Index & Ethnological Profiles</p>
+        <p><strong>Overview:</strong> The Game was originally constructed by eight founding species working in
+            cooperation. Their native names have been lost to time; the System indexes each species strictly by
+            numerical catalog designator.</p>
+    </div>
+
+    <!-- SPECIES 0 -->
+    <div class="species-card">
+        <div class="species-header">
+            <h3 class="species-title">Species 0: Unknown</h3>
+            <span class="species-number">CATALOG ID: 00</span>
+        </div>
+        <div class="spec-grid">
+            <div class="spec-item"><strong>Status:</strong> Non-Participant</div>
+            <div class="spec-item"><strong>Habitat:</strong> High Radiation Environment</div>
+        </div>
+        <p>
+            Species 0 never directly engaged with the Game. According to statements recorded from Tinkerer: <em>“Their
+            large structure and dependence on a high radiation environment for survival meant they could not interact
+            directly with the other seven founding species.”</em> No further biological or historical data exists in
+            system logs.
+        </p>
+    </div>
+
+    <!-- SPECIES 1 -->
+    <div class="species-card">
+        <div class="species-header">
+            <h3 class="species-title">Species 1: Unknown (The Developers)</h3>
+            <span class="species-number">CATALOG ID: 01</span>
+        </div>
+        <div class="spec-grid">
+            <div class="spec-item"><strong>Origin:</strong> Sigma Draconis System (Gas Giant Moon)</div>
+            <div class="spec-item"><strong>Status:</strong> Extinct (Microbot War)</div>
+        </div>
+        <p>
+            Although the biological species is presumed extinct following a destructive microbot war on their home moon,
+            the robotic avatar for the <strong>Last Architect</strong> is explicitly modeled on their physical
+            morphology.
+        </p>
+        <p><strong>Morphology:</strong></p>
+        <ul>
+            <li><strong>Structure:</strong> Humanoid, wingless, body encased in iridescent blue feathers structurally
+                resembling emu plumage.
+            </li>
+            <li><strong>Hands:</strong> Six-digit hands covered in bright yellow scales, terminating in short, sharp
+                black talons.
+            </li>
+            <li><strong>Facial Features:</strong> Large red eyes; hooked beak with a black base transitioning to a white
+                forward edge.
+            </li>
+            <li><strong>Lower Body:</strong> Three forward-facing toes per foot.</li>
+        </ul>
+    </div>
+
+    <!-- SPECIES 16 -->
+    <div class="species-card">
+        <div class="species-header">
+            <h3 class="species-title">Species 16: Trolls</h3>
+            <span class="species-number">CATALOG ID: 16</span>
+        </div>
+        <div class="spec-grid">
+            <div class="spec-item"><strong>Height Variance:</strong> 3 ft to 7 ft (Mobile) / 80 ft (Mother Tree)</div>
+            <div class="spec-item"><strong>Genders:</strong> 3 (Male, Female, Mother Tree)</div>
+        </div>
+        <p>
+            Extremely secretive and typically traveling under disguise. Mobile Trolls physically resemble a cross
+            between an orangutan and a wolf, featuring five-fingered ape-like hands, a wolf snout, and wolf-like
+            feet. Their bodies are covered by gray fur that thins on their faces, hands, and feet to reveal
+            dark brown skin.
+        </p>
+        <p>
+            They possess exceptionally long, bushy head hair and beards of an vibrant orangutan-red hue that completely
+            conceal their bodies. Utilizing subtle electromagnetic radiation, Trolls can manipulate their hair
+            to conceal and carry items. Males and females are identical in visual appearance and size variance.
+        </p>
+        <p>
+            <strong>The Mother Tree (Third Gender):</strong> Only one individual is known to exist. She is a sedentary,
+            80-foot tall sentient organism resembling a massive tree with brown bark, grey leaves, and red-orange vines.
+            She gestates the species' young and uses her vines to capture prey to sustain herself and her offspring.
+        </p>
+    </div>
+
+    <!-- SPECIES 23 -->
+    <div class="species-card">
+        <div class="species-header">
+            <h3 class="species-title">Species 23: Selkie</h3>
+            <span class="species-number">CATALOG ID: 23</span>
+        </div>
+        <div class="spec-grid">
+            <div class="spec-item"><strong>Height / Length:</strong> 4–4.5 ft (Land) / Up to 10 ft (Stretched Swimming)
+            </div>
+            <div class="spec-item"><strong>Blood Color:</strong> Blue</div>
+        </div>
+        <p>
+            Resembling upright walking walruses.   Though air-breathing and sleeping on land,
+          they consider swimming a biological necessity. The vast majority of their hunting and gathering occurs
+          in the ocean.
+        </p>
+        <p><strong>Morphology & Communication:</strong></p>
+        <ul>
+            <li><strong>Features:</strong>  Out of the water Selkies are short and stout with long bodies and
+          short limbs. They have split-flipper hands (yielding two functional digits) and flipper feet. Their faces
+          are whiskered and both genders have long tusks.
+          Born with brown fur, their coats turn grey as they mature.
+            </li>
+            <li><strong>Sexual Dimorphism:</strong> Mature males grow much larger than females and develop a ruff or
+              mane. They can stand 6 ft tall on land, with effort, and weigh in the tons.  They find it difficult to
+              walk upright and begin to shuffle on land using their front flippers, much like Earth walrus. In the
+              water they can stretch out to fifteen feet.  Mature Males are rare, as are mature females.  It is much
+              more difficult to detect a mature female since they only differ from younger members of the species
+              in the amount of gray in their fur. Immature males and females are fertile, although to a lesser degree
+              than mature individuals. The females nurse their young.
+            </li>
+            <li><strong>Language:</strong> They communicate through very high-pitched harmonic song.
+            </li>
+            <li><strong>Culture:</strong> They favor pole weapons to offset their short reach and prefer Wizard Silks
+          for attire, as the material does not impede their swimming.
+            </li>
+        </ul>
+    </div>
+
+    <!-- SPECIES 34 -->
+    <div class="species-card">
+        <div class="species-header">
+            <h3 class="species-title">Species 34: Elves</h3>
+            <span class="species-number">CATALOG ID: 34</span>
+        </div>
+        <div class="spec-grid">
+            <div class="spec-item"><strong>Height:</strong> 4.5 ft (Male) / 4.0 ft (Female)</div>
+            <div class="spec-item"><strong>Vocal Organs:</strong> None (Dental Percussion)</div>
+        </div>
+        <p>
+            Elves exhibit hybrid shark and amphibian traits. They hatch from aquatic eggs as tadpoles, developing limbs
+            before emerging onto land as air-breathing bipedal adults. They retain webbed, three-toed feet, making them
+            exceptional swimmers despite losing underwater breathing capabilities.
+        </p>
+        <p><strong>Morphology & Communication:</strong></p>
+        <ul>
+            <li><strong>Features:</strong> Four fingers per hand, large black eyes, slit nostrils, and renewable rows of
+                sharp shark-like teeth.
+            </li>
+            <li><strong>Sexual Dimorphism:</strong> Males stand ~4.5 feet tall with sparkling, fine white scale skin.
+                Females stand ~4.0 feet tall with deep black scaled skin.
+            </li>
+            <li><strong>Language:</strong> Lacking vocal cords, Elves communicate by grinding and clicking their teeth
+                together. Facial expression is minimal due to tough scaled skin; emotional cues are instead communicated
+                through subtle shifts in their hands where scale coverage is thin.
+            </li>
+        </ul>
+    </div>
+
+    <!-- SPECIES 36 -->
+    <div class="species-card">
+        <div class="species-header">
+            <h3 class="species-title">Species 36: Mer</h3>
+            <span class="species-number">CATALOG ID: 36</span>
+        </div>
+        <div class="spec-grid">
+            <div class="spec-item"><strong>Contact Status:</strong> Unmet by Human Players</div>
+            <div class="spec-item"><strong>Environment:</strong> Deep Ocean Abyss</div>
+        </div>
+        <p>
+            Humanity has had no direct contact with the Mer. They are an entirely aquatic species dwelling in the deep
+            ocean trenches of Gameworld. Existing intelligence comes exclusively via Selkie accounts, who describe the
+            Mer as "a Selkie-shaped fish."
+        </p>
+    </div>
+
+    <!-- SPECIES 40 -->
+    <div class="species-card">
+        <div class="species-header">
+            <h3 class="species-title">Species 40: ArTeeEe (Harpies)</h3>
+            <span class="species-number">CATALOG ID: 40</span>
+        </div>
+        <div class="spec-grid">
+            <div class="spec-item"><strong>Height:</strong> 3.0 ft (Adult)</div>
+            <div class="spec-item"><strong>Locomotion:</strong> Flight / Bipedal Reptilian</div>
+        </div>
+        <p>
+            Small, feathered, flight-capable individuals strongly resembling feathered dinosaurs with reptilian facial
+            structures and clawed feet. Their wings feature two functional fingers at the terminal joint allowing
+            limited item manipulation, though their feet serve as primary hands during flight and resting.
+        </p>
+        <p>
+            Children hatch directly from eggs as fully formed miniature adults. Originally speaking a complex tonal
+            language sounding like birdsong. They are capable of speaking the Elven dental-click dialect using their
+            sharp, large teeth.
+        </p>
+      <p>
+        As of this writing there are only ten known surviving members of this species.
+      </p>
+    </div>
+
+    <!-- SPECIES 41 -->
+    <div class="species-card">
+        <div class="species-header">
+            <h3 class="species-title">Species 41: Kobolds</h3>
+            <span class="species-number">CATALOG ID: 41</span>
+        </div>
+        <div class="spec-grid">
+            <div class="spec-item"><strong>Blood Color:</strong> Green</div>
+            <div class="spec-item"><strong>Reproduction:</strong> Continuous Uncontrolled Egg-Laying</div>
+        </div>
+        <p>
+            A highly metamorphic species undergoing distinct growth stages:
+        </p>
+        <ul>
+            <li><strong>Hatchling (Centipede Phase):</strong> Under 1 inch long. Burrowing herbivores that live under
+                fruit trees and come above ground to eat the fallen fruit.
+            </li>
+            <li><strong>Pill-Bug Phase:</strong> Body segments fuse and legs absorb until able to roll into an armored
+                ball.
+            </li>
+            <li><strong>"Mini" Phase:</strong> Four-legged with a prehensile tail, 4 fingers on front paws, and 4
+                fingers plus an opposable thumb on rear paws. Instinctually seeks a "Big Sister" to cling to.
+            </li>
+            <li><strong>"Sister" Phase:</strong> This phase begins when they are too large to cling to a Big Sister. A
+                new sister is about nine inches long. A new sister is still without fur. They grow yellow hair on their
+                belly and limbs. During this time period they can learn to stand on their rear legs if they are given an
+                example to follow.
+            </li>
+            <li><strong>"Big Sister" Phase:</strong> Fur coats thicken enough for younger minis to cling to them. A new
+                Big Sister stands ~3 feet tall.
+            </li>
+            <li><strong>"Mother" Phase:</strong> As they grow up to 7 feet, their limbs outgrow their carapace. This
+                makes it impossible for them to curl up. Their armored back pushes up onto their upper back where it
+                resembles a hard shell backpack. This yellow furred biped is the last known phase.
+            </li>
+
+        </ul>
+        <p>Kobolds only have one gender which is both male and female. They lay an egg once daily from the Mini Phase,
+            when the last body segment fuses. They have green blood, and viable eggs are green, while non-viable ones are
+            white.</p>
+        <p>
+            <strong>Language & Population Throttling:</strong> Kobolds lost their original scent-and-hum native language
+            post-arrival. They are capable of Human speech (though framed almost entirely in isolated nouns). Due
+            to continuous egg production, the System actively throttled their dietary nutrient intake to limit viable
+            offspring, preventing the species from completely stripping Gameworld's plant ecosystem. The only known way
+            to stop their egg laying is with a surgical procedure.
+        </p>
+        <div class="handwritten-note">
+            I suspect the systematic nutrient throttling of Species 41 (Kobolds) affected more than just the viability
+            of their eggs. It is probable it lengthened the time needed for them to mature and reduced the intelligence
+            of the entire population. --I. W.
+        </div>
+    </div>
+
+    <!-- SPECIES 42 -->
+    <div class="species-card">
+        <div class="species-header">
+            <h3 class="species-title">Species 42: Humans</h3>
+            <span class="species-number">CATALOG ID: 42</span>
+        </div>
+        <div class="spec-grid">
+            <div class="spec-item"><strong>Status:</strong> Recent Arrivals</div>
+        </div>
+        <p>
+          Humans arrived on Gameworld in a sub-lightspeed multi-generational starship. This vessel was not designed to
+          ever fly again.
+        </p>
+        <ul>
+            <li><strong>Features:</strong> They stand upright on two legs and are 5 - 6ft tall. They have five fingered
+                hands. They have small dull teeth and smooth nails on their hands and feet instead of claws.
+                Their blood is red. They have no fur, only guard hairs with the highest concentration on their heads.
+            </li>
+            <li><strong>Sexual Dimorphism:</strong> Males are larger with more muscle mass. They generally have
+              more body hair and grow facial hair on maturity. Females are slighter but more agile. Their young are born
+              completely helpless and are nursed by their mothers.
+            </li>
+            <li><strong>Language:</strong> They have vocal cords, but their language is almost completely nontonal.
+              Meaning is conveyed with syllables.
+            </li>
+            <li><strong>Culture:</strong> They are a pack society. The quality of their society depends heavily on the
+              quality of their leadership.
+            </li>
+        </ul>
+    </div>
+
+    <p class="handwritten-note">
+        *Field Note: The missing numbers are all unknown Player species that were cataloged during the long history
+      of the Game.  Whether any more of them survive in or outside the Game is unknown. --I. W.
+    </p>
+
+</div>
+<nav class="bottom-nav">
+  <div class="nav-container">
+    <a href="lore.html">Index</a>
+  </div>
+</nav>
+
+</body>
+</html>

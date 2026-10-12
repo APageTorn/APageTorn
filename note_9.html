@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Import the fonts from the Google Fonts CDN -->
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Architects+Daughter&family=Kalam:wght@400;700&family=Patrick+Hand&display=swap"
+          rel="stylesheet">
+
+    <title>User Manual: Notes from within the Structure</title>
+    <style>
+    body {
+      font-family: 'Patrick Hand', 'Architects Daughter', cursive;
+      line-height: 1.6;
+      color: #2b2b2b;
+      background-color: #F4EBE1;
+      margin: 0;
+      padding: 20px;
+    }
+    nav {
+      padding: 15px 20px;
+      text-align: center;
+      border-bottom: 1px solid #2d2640;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      margin: -20px -20px 30px -20px;
+    }
+    nav a {
+      color: #0f0d17;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 600;
+    }
+    nav a:hover {
+      color: #b794f4; /* Lavender hover */
+    }
+    .entry-container {
+      max-width: 850px;
+      margin: 0 auto;
+      background-color: #F4EBE1;
+      border: 1px solid #2d2640;
+      border-radius: 8px;
+      padding: 30px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    }
+    .notebook-header {
+      border-bottom: 2px dashed #8c7a6b;
+      padding-bottom: 12px;
+      margin-bottom: 25px;
+    }
+    .handwritten-note {
+      font-family: 'Kalam', cursive;
+      font-weight: 700;
+      color: #6b46c1;
+      font-style: italic;
+    }
+    .warning-box {
+      background-color: #F4EBE1;
+      border-left: 4px solid #c96a4b;
+      padding: 12px 16px;
+      margin: 20px 0;
+    }
+    .pictogram-card {
+      background-color: #F4EBE1;
+      padding: 15px;
+      margin: 15px 0;
+    }
+    .gesture-step {
+      margin-left: 20px;
+      border-left: 2px solid #5a5047;
+      padding-left: 15px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+    }
+    th, td {
+      padding: 10px;
+      text-align: left;
+      table-layout: fixed;
+    }
+    th {
+      color: #6b46c1;
+      border-bottom: 2px solid #374151;
+    }
+
+    .data-table  tr th:first-child,
+    .data-table  tr td:first-child {
+      text-align: left;
+      vertical-align: top;
+      color: #6b46c1;
+      border-bottom: none;
+      font-weight: bold;
+    }
+
+    /* Bottom Navigation Container */
+    .bottom-nav {
+      padding: 15px 20px;
+      border-top: 1px solid #2d2640;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      margin: 30px -20px -20px -20px;
+    }
+
+    /* Inner Container (Matches your 850px central section layout) */
+    .bottom-nav .nav-container {
+      max-width: 850px;
+      margin: 0 auto;       /* Centers the 850px area on the screen */
+      display: flex;
+      justify-content: flex-end; /* Pushes the link to the right edge of the 850px box */
+    }
+
+    /* Matching Link Styles */
+    .bottom-nav a {
+      color: #0f0d17;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    /* Matching Hover Effect */
+    .bottom-nav a:hover {
+      color: #b794f4;
+    }
+
+
+
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="series.html">Series</a>
+    <a href="lore.html">Lore Vault</a>
+    <a href="about.html">About</a>
+</nav>
+
+<div class="entry-container">
+    <div class="notebook-header">
+        <p class="handwritten-note">[STRUCTURE NOTES // COMPILED BY I. WHITMAN]</p>
+        <h1>THE USER MANUAL</h1>
+        <p><strong>Subject:</strong> Player attributes</p>
+        <p><strong>Prerequisite:</strong> Read through <em>Book 6</em> before opening these notes.</p>
+    </div>
+
+    <h2>Individual Interface</h2>
+    <p>
+        Every Player had a individual interface. All current known Player species use an optical interface.  It is
+        unknown if another version exists.
+    </p>
+    <p>
+        The individual interface is activated by the player holding their eyes steady.  A blinking light appears at the
+        edge of their vision.  Using their hands, they can push this light to the center of their vision.  Once in the
+        center the light opens up into the interface.
+    </p>
+    <p>
+        There are many icons, which trigger functions and deeper icon menu choices.  In the center of the interface,
+        just left of center is a column of numbers.  The font the individual interface appears in is tied to the
+        Player's tier, see <a href="note_3.html">Inscription Fonts</a>.
+    </p>
+    <p>
+        The numbers are named from top to bottom, vitality, constitution, stamina, strength, agility, dexterity,
+        intelligence and wisdom. The maximum value of these numbers is limited by tier.
+    </p>
+        <table class="data-table">
+        <thead>
+        <tr>
+            <th>Tier</th>
+            <th>0</th>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
+            <th>4</th>
+            <th>5</th>
+            <th>6</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Max Attribute</td>
+            <td>6</td>
+            <td>36</td>
+            <td>216</td>
+            <td>1,296</td>
+            <td>7,776</td>
+            <td>46,656</td>
+            <td>279,936</td>
+        </tr>
+        </tbody>
+    </table>
+    <p>
+        Most Tier four players never reach the limit. Although Tier five and six number are given here, matching the
+        mathematical pattern, too few players have ever reached these tiers to confirm them.
+    </p>
+    <p>
+        Some attributes automatically increase with tier.  Intelligence values triple at each tier increase.  It is
+        believed this mechanism is put into place to enable spell learning at the new tier even after the step increase
+        in difficulty. If a Player has a 'real' attribute value that is higher than the max, it will be masked by the
+        max value, and the max will be used.  This high 'real' value is only revealed after an increase in tier.
+    </p>
+
+
+    <h2>Player attributes </h2>
+    <p>
+    </p>
+    <div class="pictogram-card">
+        Although built into the Game interface, the names and definitions of Player attributes are a Player
+        invention. The human version of it is based on the elven version. This section gives the quick version of their
+        definitions.
+        <table>
+            <tr>
+                <td><strong>Vitality</strong></td>
+                <td>How fast a Player recovers.</td>
+            </tr>
+            <tr>
+                <td><strong>Constitution</strong></td>
+                <td>How hard it is to hurt a Player.</td>
+            </tr>
+            <tr>
+                <td><strong>Stamina</strong></td>
+                <td>How long a Player can fight before exhaustion.</td>
+            </tr>
+            <tr>
+                <td><strong>Strength</strong></td>
+                <td>How hard a player can it.</td>
+            </tr>
+            <tr>
+                <td><strong>Agility</strong></td>
+                <td>How fast a player can change directions.</td>
+            </tr>
+            <tr>
+                <td><strong>Dexterity</strong></td>
+                <td>How flexible a player is.</td>
+            </tr>
+            <tr>
+                <td><strong>Intelligence</strong></td>
+                <td>How fast a player learns.</td>
+            </tr>
+            <tr>
+                <td><strong>Wisdom</strong></td>
+                <td>How much a player knows.</td>
+            </tr>
+        </table>
+
+    <p class="handwritten-note">
+        *Field Observation:  Wisdom may be a measure of how close a player is to the next tier.  For tier 0-4
+        wisdom has a minimum of the maximum of the tier below.  This observation does not hold for tier 5 and 6.
+        Tier 5 and 6 are well known to be test based tiers and not wisdom based. --V. K.
+    </p>
+    </div>
+    <h2>Nanobot Attributes </h2>
+        <div class="pictogram-card">
+            <p>
+                The quick version of attribute definitions are accurate, but they are not precise. Game attributes
+                apply only to Game play. They do not apply to everyday life.  That line between the two is a fuzzy one
+                which moves at a Player increases tier.  A tier zero or one player will very rarely experience nanobot
+                assistance outside active battle, crafting or spell casting.  A tier six player receives the full
+                boost at all times even outside of the Game proper since their nanobots remain active.
+            </p>
+            <p>
+                Current theory that this sliding bar of assistance is the Game training Players to control those
+                boosts, so when a Player reaches tier six they don't accidentally destroy forks everytime they eat dinner.
+            </p>
+            <p>
+                Below is the nanobot version of the attributes.  The attributes have been reordered for clarity.
+            </p>
+            <p><strong>Stamina: </strong><br>
+                How much fatigue nanobots induce in the Player as payment for their use.
+            </p>
+            <p><strong>Vitality: </strong><br>
+                How quickly they remove the penalty fatigue induced in the Player as payment for their use. It
+                is also how much they will assist a player to recover from natural fatigue.
+            </p>
+            <p><strong>Strength: </strong><br>
+                How much assistance nanobots will give to a players actions.
+            </p>
+            <p><strong>Constitution: </strong><br>
+                How much assistance is deducted from an attacker. At higher tiers it is also how much resistance to
+                damage is given.
+            </p>
+            <p><strong>Agility: </strong><br>
+                How quickly nanobots respond to changing commands.
+            </p>
+            <p><strong>Dexterity: </strong><br>
+                How precise nanobots follow commands.
+            </p>
+            <p><strong>Intelligence: </strong><br>
+                How many repetitions are needed for nanobots to understand a new command from this Player.
+            </p>
+            <p><strong>Wisdom: </strong><br>
+                How well the Nanobots know the player.  This is a direct measure of how integrated a Player's body
+                nanobots are with the Player, and how well the Player is integrated with their nanobots.
+            </p>
+    </div>
+
+</div>
+<nav class="bottom-nav">
+    <div class="nav-container">
+        <a href="lore.html">Index</a>
+    </div>
+</nav>
+</body>
+</html>

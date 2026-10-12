@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Import the fonts from the Google Fonts CDN -->
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Architects+Daughter&family=Kalam:wght@400;700&family=Patrick+Hand&display=swap"
+          rel="stylesheet">
+
+    <title>User Manual: Notes from within the Structure</title>
+    <style>
+    body {
+      font-family: 'Patrick Hand', 'Architects Daughter', cursive;
+      line-height: 1.6;
+      color: #2b2b2b;
+      background-color: #F4EBE1;
+      margin: 0;
+      padding: 20px;
+    }
+    nav {
+      padding: 15px 20px;
+      text-align: center;
+      border-bottom: 1px solid #2d2640;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      margin: -20px -20px 30px -20px;
+    }
+    nav a {
+      color: #0f0d17;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 600;
+    }
+    nav a:hover {
+      color: #b794f4; /* Lavender hover */
+    }
+    .entry-container {
+      max-width: 850px;
+      margin: 0 auto;
+      background-color: #F4EBE1;
+      border: 1px solid #2d2640;
+      border-radius: 8px;
+      padding: 30px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    }
+    .notebook-header {
+      border-bottom: 2px dashed #8c7a6b;
+      padding-bottom: 12px;
+      margin-bottom: 25px;
+    }
+    .handwritten-note {
+      font-family: 'Kalam', cursive;
+      font-weight: 700;
+      color: #6b46c1;
+      font-style: italic;
+    }
+    .warning-box {
+      background-color: #F4EBE1;
+      border-left: 4px solid #c96a4b;
+      padding: 12px 16px;
+      margin: 20px 0;
+    }
+    .pictogram-card {
+      background-color: #F4EBE1;
+      padding: 15px;
+      margin: 15px 0;
+    }
+    .center-card {
+      display: grid;
+      place-items: center; /* Centers both horizontally and vertically */
+
+    }
+    .gesture-step {
+      margin-left: 20px;
+      border-left: 2px solid #5a5047;
+      padding-left: 15px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+    }
+    th, td {
+      padding: 10px;
+      text-align: left;
+      table-layout: fixed;
+    }
+    th {
+      color: #6b46c1;
+      border-bottom: 2px solid #374151;
+    }
+
+    table.single_column {
+      width: auto;
+     }
+
+    /* Bottom Navigation Container */
+    .bottom-nav {
+      padding: 15px 20px;
+      border-top: 1px solid #2d2640;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      margin: 30px -20px -20px -20px;
+    }
+
+    /* Inner Container (Matches your 850px central section layout) */
+    .bottom-nav .nav-container {
+      max-width: 850px;
+      margin: 0 auto;       /* Centers the 850px area on the screen */
+      display: flex;
+      justify-content: flex-end; /* Pushes the link to the right edge of the 850px box */
+    }
+
+    /* Matching Link Styles */
+    .bottom-nav a {
+      color: #0f0d17;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    /* Matching Hover Effect */
+    .bottom-nav a:hover {
+      color: #b794f4;
+    }
+
+
+
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="series.html">Series</a>
+    <a href="lore.html">Lore Vault</a>
+    <a href="about.html">About</a>
+</nav>
+
+<div class="entry-container">
+    <div class="notebook-header">
+        <p class="handwritten-note">[STRUCTURE NOTES // COMPILED BY E. TAYLOR]</p>
+        <h1>THE USER MANUAL</h1>
+        <p><strong>Subject:</strong> Magical Crafting in the Structure</p>
+        <p><strong>Prerequisite:</strong> Read through <em>Book 3</em> before opening these notes.</p>
+    </div>
+
+    <h2>1. Overview</h2>
+    <p>
+        Crafting in the game is controlled by the pattern map. Each beginning craft has an entry level pattern that
+        allows a new Player to begin crafting. The pattern map is actually a graph, and all the patterns eventually
+        connect together. When a beginning fiber crafter opens the pattern map, it will be centered on the pattern
+        to make a crafting bag. The pattern is open for everyone, but will appear faded until it is mastered. The
+        surrounding patterns will be dark. When a crafter masters a pattern, the pattern solidifies. Learning a
+        pattern also gives the crafter the chance to open connecting patterns. Patterns are more likely to be
+        revealed if the crafter has:
+    </p>
+    <div class="gesture-step">
+        <p>1. Worked with all the materials before.</p>
+        <p>2. Knows all the magic spells needed.</p>
+        <p>3. Has seen the completed item.</p>
+        <p>4. Has inspected the item.</p>
+        <p>5. Has repaired the item.</p>
+    </div>
+
+
+    <p>The pattern graph is reevaluated each time a crafter masters a pattern, learns a new spell or works with
+        a new material. Patterns can open as far as three connections away from a newly mastered pattern,
+        although that is rare.
+    </p>
+    <p class="handwritten-note">
+        Note: Although creating an item isn't recognized as a trigger point for the pattern map to be
+        reevaluated, it might be, since a pattern is guaranteed to open if the crafter manages to make the item without
+        a pattern, or by altering another pattern. -E. T.
+    </p>
+    <div class="warning-box">
+        <strong>WARNING:</strong><br>
+        The Tier level given for crafts in this document are human created. They are ranked here in the order they were
+        discovered and by complexity.
+    </div>
+
+    <h2>2. Tier 0: Non-Crafts</h2>
+    <p>
+        There are many occupations in the structure that are not considered a craft because there isn't a pattern map
+        associated with them. Tools and magic are still used in these occupations. The finished products are not
+        integrated. They can not be put into inventory. Since they are identical outside of the Game, they can
+        be traded with the colony core. Butchering, Cooking and Brewing are examples.
+    </p>
+
+    <h2>3. Tier 1: Base Crafts</h2>
+    <p>The following crafts are considered the starter or basic crafts in the game.</p>
+    <div class="pictogram-card">
+        <h3>A. Leather</h3>
+        <p>
+            Although skinning and butchering are considered non-crafts, tanning leather using integrated tools
+            results in an integrated product. Leather can be made thinner during the tanning process but not thicker.
+            Cutting leather with a knife or sheet cutter, opens the leather crafting pattern map.
+        </p>
+    </div>
+    <div class="pictogram-card">
+        <h3>B. Fiber</h3>
+        <p>
+            Thread can be spun from plant and animal fibers and fiber scrap and debris using a spindle. A loom turns
+            thread fabric. The type of weave is controlled by spells. Fabric is cut using a set of integrated shears,
+            which opened the fiber crafting pattern map.
+        </p>
+    </div>
+    <div class="pictogram-card">
+        <h3>C. Wood</h3>
+        <p>
+            Wood planks can be made from felled trees or dead fall, or from wood scrap. The woodworking pattern map is
+            accessed through the crosscut saw.
+        </p>
+    </div>
+    <div class="pictogram-card">
+        <h3>D. Metal</h3>
+        <p>
+            Metal ingots can be made from scrap, debris or ore. The metalworking pattern map is accessed through the
+            blacksmith's anvil. The below table is a sample of the many metals that can be crafted. The listed tier
+            it the tier of the spell needed to work the metal.
+        </p>
+        <table>
+            <tr>
+                <th>Tier</th>
+                <th>Metal</th>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>Black Iron</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Steel</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Bronze</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Copper</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Aluminum</td>
+            </tr>
+        </table>
+    </div>
+
+    <p class="handwritten-note">
+        *Note: These listings give the most common tool used to access the pattern map for each craft. Once opened using
+        these starter tools, it can be accessed using higher tier tools. --E. T.
+    </p>
+
+    <h2>3. Tier 2: Advanced Crafts</h2>
+    <p>The following crafts are considered advanced or tier 2 crafts in the game.</p>
+    <div class="pictogram-card">
+        <h3>A. Glass</h3>
+        <p>
+            Glass scrap exists but is rare. There is both glass debris and recyclables. Glass can be created from
+            silicon sand. The glass pattern map is tied to the blowing tube.
+        </p>
+    </div>
+    <div class="pictogram-card">
+        <h3>B. Stone</h3>
+        <p>
+            There is no known stone scrap. There is both stone debris and recyclables, but most stone is rock,
+            collected from the surface or, industrial area and mines. The green spaces inside the structure contain
+            very little rock. The stone pattern map is tied to the chisel.
+        </p>
+    </div>
+    <div class="pictogram-card">
+        <h3>C. Clay</h3>
+        <p>
+            There is no known clay scrap. There are no know recycling spells. Since clay is fired, pottery debris can
+            not be converted back to clay. Clay can be collected from the surface and is the industrial area and
+            mines. It is a rare find in ruined shops. The clay pattern map is tied to the spinning wheel.
+        </p>
+    </div>
+    <div class="pictogram-card">
+        <h3>D. Bone</h3>
+        <p>
+            Bone crafting has expanded to include all organic components that are not leather. This includes bone,
+            claws, tusks and shell. The same knife, saw and drill that is used in other crafts, will reveal the bone
+            pattern map when working on bone.
+        </p>
+
+        <p class="handwritten-note">
+            *Note: Since the same pattern is used for bone, tusk, shell, wood and metal
+            buttons this functionality was not noticed for some time. --E. T.
+        </p>
+    </div>
+
+    <h2>3. Tier 3: Compound Crafts</h2>
+    <p>The following crafts are considered compound or tier 3 crafts in the game. They combine multiple of the singular
+        craft described above. If trained by a master, an apprentice can open a pattern in the center of the crafting
+        group.</p>
+    <div class="pictogram-card">
+        <h3>A. Jewelery</h3>
+        <p>
+            Jewelery combines fiber, metal, stone and glass crafting.
+        </p>
+    </div>
+    <div class="pictogram-card">
+        <h3>B. Furniture</h3>
+        <p>
+            Furniture combines wood, metal, glass, clay and fiber crafting.
+        </p>
+    </div>
+
+
+    <h2>4. Tier and Quality</h2>
+    <p>The tier of a finished item is a measure of how well it works.  The quality is a measure of how long it lasts.
+        Both attributes are dependent on the tier of the materials, tools and spells used, and the tier of the
+        crafter. Material tier is not fixed but varies with the pattern used.
+    </p>
+    <p>All integrated products can be repaired. Repairing returns an items condition to 100%, but it reduces the
+        durability of the item, making the item wear out quicker. Durability is impacted less by many small repairs
+        than one large repair.</p>
+
+
+    <h2>5. Crafter Tiers and Titles</h2>
+    <p>Crafters organize themselves into workshops working under a master.  This culture has lead to a set of titles
+        associated with tier.  Crafting is determined by the highest spell they know in a craft. Usually this means
+        their tier matches their main craft, but they are lower tier crafters in secondaries.
+    </p>
+    <table>
+        <tr>
+        <th>Tier</th>
+        <th>Title</th>
+        </tr>
+        <tr>
+            <td>0</td>
+            <td>Novice</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Apprentice</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Journeyman</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Craftsman</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Master</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Grand Master</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>Lesser God</td>
+        </tr>
+    </table>
+
+
+</div>
+<nav class="bottom-nav">
+    <div class="nav-container">
+        <a href="lore.html">Index</a>
+    </div>
+</nav>
+
+</body>
+</html>

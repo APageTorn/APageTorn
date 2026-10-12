@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Import the fonts from the Google Fonts CDN -->
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Architects+Daughter&family=Kalam:wght@400;700&family=Patrick+Hand&display=swap"
+          rel="stylesheet">
+
+    <title>User Manual: Notes from within the Structure</title>
+    <style>
+    body {
+      font-family: 'Patrick Hand', 'Architects Daughter', cursive;
+      line-height: 1.6;
+      color: #2b2b2b;
+      background-color: #F4EBE1;
+      margin: 0;
+      padding: 20px;
+    }
+    nav {
+      padding: 15px 20px;
+      text-align: center;
+      border-bottom: 1px solid #2d2640;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      margin: -20px -20px 30px -20px;
+    }
+    nav a {
+      color: #0f0d17;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 600;
+    }
+    nav a:hover {
+      color: #b794f4; /* Lavender hover */
+    }
+    .entry-container {
+      max-width: 850px;
+      margin: 0 auto;
+      background-color: #F4EBE1;
+      border: 1px solid #2d2640;
+      border-radius: 8px;
+      padding: 30px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    }
+    .notebook-header {
+      border-bottom: 2px dashed #8c7a6b;
+      padding-bottom: 12px;
+      margin-bottom: 25px;
+    }
+    .handwritten-note {
+      font-family: 'Kalam', cursive;
+      font-weight: 700;
+      color: #6b46c1;
+      font-style: italic;
+    }
+    .warning-box {
+      background-color: #F4EBE1;
+      border-left: 4px solid #c96a4b;
+      padding: 12px 16px;
+      margin: 20px 0;
+    }
+    .pictogram-card {
+      background-color: #F4EBE1;
+      padding: 15px;
+      margin: 15px 0;
+    }
+    .gesture-step {
+      margin-left: 20px;
+      border-left: 2px solid #5a5047;
+      padding-left: 15px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+    }
+    th, td {
+      padding: 10px;
+      text-align: left;
+      table-layout: fixed;
+      vertical-align: top;
+    }
+    table tr th:first-child,
+    table tr td:first-child {
+        width: 130px;
+      vertical-align: top;
+    }
+
+    /* Bottom Navigation Container */
+    .bottom-nav {
+      padding: 15px 20px;
+      border-top: 1px solid #2d2640;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      margin: 30px -20px -20px -20px;
+    }
+
+    /* Inner Container (Matches your 850px central section layout) */
+    .bottom-nav .nav-container {
+      max-width: 850px;
+      margin: 0 auto;       /* Centers the 850px area on the screen */
+      display: flex;
+      justify-content: flex-end; /* Pushes the link to the right edge of the 850px box */
+    }
+
+    /* Matching Link Styles */
+    .bottom-nav a {
+      color: #0f0d17;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    /* Matching Hover Effect */
+    .bottom-nav a:hover {
+      color: #b794f4;
+    }
+
+
+
+
+
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="series.html">Series</a>
+    <a href="lore.html">Lore Vault</a>
+    <a href="about.html">About</a>
+</nav>
+
+<div class="entry-container">
+    <div class="notebook-header">
+        <p class="handwritten-note">[PLAYER TIER // COMPILED BY I. WHITMAN]</p>
+        <h1>THE USER MANUAL</h1>
+        <p><strong>Subject:</strong> Player Tier</p>
+        <p><strong>Prerequisite:</strong> Read through <em>Book 2</em> before opening these notes.</p>
+    </div>
+
+
+    <h2>Known Player Tiers</h2>
+
+    <h3>Tier 0:</h3>
+    <p>A new arrival or child. Technically and infant is tier 0, but it is generally accepted that
+        children's attempts to learn magic below the age of eight are ignored.
+    </p>
+    <p>A tier 0 can learn and cast tier 0 spells. They can do all utility spells, which don't
+        require learning.
+    </p>
+    <h3>Tier 1:</h3>
+    <p>Successfully cast a spell from the 1-6 spell trees.
+    </p>
+    <p>Magic color is set. Structure born children reach tier 1 between the ages of 8-10. A tier 1
+        can learn and cast tier 1 spells.
+    </p>
+    <h3>Tier 2:</h3>
+    <p>Cast an unknown number of tier 1 spells.
+    </p>
+    <p>Structure born typically reach tier 2 by the age of 14. A tier 2 can learn and cast tier 2
+        spells.
+    </p>
+    <h3>Tier 3:</h3>
+    <p>Cast an unknown number of tier 2 spells from at least 2 - 3 spell trees. Unlearned utility spells
+        are not included in the spell tree count.
+    </p>
+    <p>Structure born can reach tier 3 by the age of 20. A tier 3 can learn and cast tier 3 spells.
+        As they
+        near the tier 4 transision, tier 3 begin to leak their magic color into colored integrated items.
+    </p>
+    <h3>Tier 4:</h3>
+    <p>Cast an unknown number of tier 3 spells from at least 5 of the 6 spell trees. Unlearned utility
+        spells are not included in the spell tree count. To learn enough it is required to learn some
+        warrior, some wizard, some crafting, some learned utility.
+    </p>
+    <p>Structure born adults can reach tier 4 by the age of 30. Most residents never reach it. A
+        tier 4
+        can learn and cast tier 4 spells. Integrated cloth discolors if the cloth is a non-matching color,
+        or darkens if matching, if worn more than a day.
+    </p>
+    <h3>Tier 5:</h3>
+    <p> Tier 5 is the first of the test tiers. A player must make the hard choice to reach tier 5.
+    </p>
+    <p>Very few are offered the tier 5 test, so no age range can be determined. A tier 5 can learn
+        and
+        cast tier 5 spells. Integrated cloth discolors if the cloth is a non-matching color, or darkens
+        if matching, within hours.
+    </p>
+    <h3>Tier 6:</h3>
+    <p> Tier 6 is the second of the test tiers. A player must remain of aware of how their actions
+        affect others even under threat of death.
+    </p>
+    <p>Very few are offered the tier 6 test, so no age range can be determined. There are no pre-written
+        tier 6 spells, instead a tier 6 begins to learn direct control. During this process emotions leak
+        as they are interpreted as instructions by nearby nanobots. Nanobots' efforts to heal are no
+        longer throttled by the control system. A tier 6 does not experience minor aches and pains,
+        heal quickly, and grow younger. The selkie’s believe that the “upgraded spirit” of a tier 6
+        can bring them back to life up to six days after their death.
+    </p>
+    <p>tier 6 can die, it just takes more effort.
+    </p>
+    <p> A tier 6s nanobots remain active beyond the structure's area of influence.
+    </p>
+    <p> Inside the structure a tier 6's presence affects the environment, causing changes to objects,
+        furniture, toys and reversing some of the damage on surfaces in order to warn other players of
+        their presence.
+    </p>
+
+</div>
+<nav class="bottom-nav">
+    <div class="nav-container">
+        <a href="lore.html">Index</a>
+    </div>
+</nav>
+
+</body>
+</html>

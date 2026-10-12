@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The User Manual</title>
+    <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      color: #e2e8f0;
+      background-color: #0f0d17; /* Deep purple-tinted black */
+      margin: 0;
+      padding: 0;
+    }
+    nav {
+      background-color: #181524;
+      padding: 15px 20px;
+      text-align: center;
+      border-bottom: 1px solid #2d2640;
+    }
+    nav a {
+      color: #e2e8f0;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 600;
+    }
+    nav a:hover {
+      color: #b794f4; /* Lavender hover */
+    }
+    .hero {
+      background: linear-gradient(135deg, #2e1a47 0%, #181524 100%);
+      color: white;
+      text-align: center;
+      padding: 50px 20px;
+      border-bottom: 2px solid #6b46c1;
+    }
+    .hero h1 {
+      margin: 0 0 10px 0;
+      font-size: 2.3rem;
+      color: #f3e8ff;
+      font-family: 'Courier New', Courier, monospace;
+      letter-spacing: 1px;
+    }
+    .hero p {
+      font-size: 1.1rem;
+      max-width: 650px;
+      margin: 0 auto;
+      color: #d8b4fe;
+    }
+    .container {
+      max-width: 850px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    .spoiler-notice {
+      background-color: #1c152b;
+      border-left: 4px solid #b794f4;
+      padding: 15px 20px;
+      border-radius: 0 6px 6px 0;
+      margin-bottom: 35px;
+    }
+    .spoiler-notice p {
+      margin: 0;
+      color: #cbd5e1;
+    }
+
+    /* Section Cards */
+    .lore-section {
+      background-color: #181524;
+      border: 1px solid #2d2640;
+      border-radius: 8px;
+      padding: 25px;
+      margin-bottom: 30px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+    .section-header {
+      border-bottom: 1px solid #3c2f54;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+    }
+    .section-header h2 {
+      margin: 0;
+      color: #f3e8ff;
+      font-size: 1.4rem;
+    }
+    .badge {
+      background-color: #2e1a47;
+      color: #c084fc;
+      border: 1px solid #6b46c1;
+      font-size: 0.85rem;
+      padding: 3px 10px;
+      border-radius: 12px;
+      font-weight: bold;
+    }
+
+    /* Entry Lists */
+    .entry-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .entry-item {
+      padding: 12px 0;
+      border-bottom: 1px dashed #2d2640;
+    }
+    .entry-item:last-child {
+      border-bottom: none;
+    }
+    .entry-item a {
+      color: #b794f4;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.05rem;
+    }
+    .entry-item a:hover {
+      text-decoration: underline;
+      color: #c084fc;
+    }
+    .entry-desc {
+      color: #94a3b8;
+      font-size: 0.9rem;
+      margin: 4px 0 0 0;
+    }
+
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="series.html">Series</a>
+    <a href="lore.html">Lore Vault</a>
+    <a href="about.html">About</a>
+</nav>
+
+<div class="hero">
+    <h1>DOCUMENTATION</h1>
+    <p>Colony Reports and User Manual</p>
+</div>
+
+<div class="container">
+
+    <div class="spoiler-notice">
+        <p><strong>Spoiler Protection Warning:</strong> To preserve the mystery and revelations of the narrative, select
+            entries are grouped by reading progress. Please only open sections corresponding to the books you have
+            completed.</p>
+    </div>
+
+    <!-- PRE-SERIES / GENERAL -->
+    <div class="lore-section">
+      <div class="section-header">
+        <h2>Pre-Launch Planning</h2>
+        <span class="badge">Safe For All Readers</span>
+      </div>
+      <ul class="entry-list">
+        <li class="entry-item">
+          <a href="report_0.html">Departure and Landing</a>
+          <p class="entry-desc">Colony Basic Facts, Ship Construction, and Primary Population Metrics.</p>
+        </li>
+      </ul>
+    </div>
+
+    <!-- POST-BOOK 1 -->
+    <div class="lore-section">
+      <div class="section-header">
+        <h2>After-Landing Reports</h2>
+        <span class="badge">Read After Book 1</span>
+      </div>
+      <ul class="entry-list">
+        <li class="entry-item">
+          <a href="report_1.html">Report #37: Grid 27 West 13</a>
+          <p class="entry-desc">Discovery of Ruined Building.</p>
+        </li>
+        <li class="entry-item">
+          <a href="report_2.html">Report #272: Retrospective on the Landing</a>
+          <p class="entry-desc">Failure Points in the Plan.</p>
+        </li>
+      </ul>
+    </div>
+
+    <!-- POST-BOOK 1 -->
+    <div class="lore-section">
+        <div class="section-header">
+            <h2>The User Manual</h2>
+            <span class="badge">Read After Book 1</span>
+        </div>
+        <ul class="entry-list">
+            <li class="entry-item">
+                <a href="note_1.html">Structure Interfaces</a>
+                <p class="entry-desc">Methods of controlling the technology built into the structure.</p>
+            </li>
+            <li class="entry-item">
+                <a href="note_2.html">The 0–7 Numerical Command Trees</a>
+                <p class="entry-desc">The number, color, element and properties associated with each of the command
+                    trees.</p>
+            </li>
+            <li class="entry-item">
+                <a href="note_3.html">The Numbering System</a>
+                <p class="entry-desc">Fonts and Higher Values</p>
+            </li>
+        </ul>
+    </div>
+
+    <!-- POST-BOOK 2 -->
+    <div class="lore-section">
+        <div class="section-header">
+            <h2>The User Manual</h2>
+            <span class="badge">Read After Book 2</span>
+        </div>
+        <ul class="entry-list">
+            <li class="entry-item">
+                <a href="note_4.html">Spawn Rates</a>
+                <p class="entry-desc">Types of items found in the structure and their spawning cycles.</p>
+            </li>
+            <li class="entry-item">
+                <a href="note_5.html">Player Tier</a>
+                <p class="entry-desc">Requirements and abilities.</p>
+            </li>
+        </ul>
+
+    </div>
+
+    <!-- POST-BOOK 3 -->
+    <div class="lore-section">
+        <div class="section-header">
+            <h2>The User Manual</h2>
+            <span class="badge">Read After Book 3</span>
+        </div>
+        <ul class="entry-list">
+            <li class="entry-item">
+                <a href="note_6.html">Crafting</a>
+                <p class="entry-desc">Magical Crafting in the Structure.</p>
+            </li>
+        </ul>
+    </div>
+
+    <!-- POST-BOOK 4 -->
+    <div class="lore-section">
+        <div class="section-header">
+            <h2>The User Manual</h2>
+            <span class="badge">Read After Book 4</span>
+        </div>
+        <ul class="entry-list">
+            <li class="entry-item">
+                <a href="note_7.html">Spell Complexity</a>
+                <p class="entry-desc">How spell complexity increases with tier</p>
+            </li>
+        </ul>
+    </div>
+
+    <!-- POST-BOOK 5 -->
+    <div class="lore-section">
+        <div class="section-header">
+            <h2>The Dean's Desk</h2>
+            <span class="badge">Read After Book 5</span>
+        </div>
+        <ul class="entry-list">
+            <li class="entry-item">
+                <a href="note_8.html">Religion</a>
+                <p class="entry-desc">The religious beliefs of non-human player species.</p>
+            </li>
+        </ul>
+    </div>
+    <!-- POST-BOOK 6-->
+    <div class="lore-section">
+        <div class="section-header">
+            <h2>The Forms of Magic</h2>
+            <span class="badge">Read After Book 6</span>
+        </div>
+        <ul class="entry-list">
+            <li class="entry-item">
+                <a href="note_9.html">Magic Attributes</a>
+                <p class="entry-desc">A description of Player attributes.</p>
+            </li>
+        </ul>
+    </div>
+
+    <!-- POST-BOOK 6-->
+    <div class="lore-section">
+        <div class="section-header">
+            <h2>The Forms of Magic</h2>
+            <span class="badge">Read After Book 7</span>
+        </div>
+        <ul class="entry-list">
+            <li class="entry-item">
+                <a href="note_10.html">Magic Methods</a>
+                <p class="entry-desc">The known forms of magic.</p>
+            </li>
+        </ul>
+    </div>
+
+    <!-- POST-BOOK 7-->
+    <div class="lore-section">
+        <div class="section-header">
+            <h2>The User Manual</h2>
+            <span class="badge">Read After Book 7</span>
+        </div>
+        <ul class="entry-list">
+            <li class="entry-item">
+                <a href="note_11.html">Upgrading Rests</a>
+                <p class="entry-desc">The upgrade path and known available options.</p>
+            </li>
+        </ul>
+    </div>
+
+    <!-- POST-BOOK 8-->
+    <div class="lore-section">
+        <div class="section-header">
+            <h2>The User Manual</h2>
+            <span class="badge">Read After Book 8</span>
+        </div>
+        <ul class="entry-list">
+            <li class="entry-item">
+                <a href="note_13.html">Known Player Races</a>
+                <p class="entry-desc">List of species recognized by the Game as Players.</p>
+            </li>
+            <li class="entry-item">
+                <a href="note_5_updated.html">Updated Player Tier</a>
+                <p class="entry-desc">Requirements and abilities.</p>
+            </li>
+            <li class="entry-item">
+                <a href="note_15.html">Learning Curve</a>
+                <p class="entry-desc">Intelligence scaling and its interaction with learning new spells.</p>
+            </li>
+        </ul>
+    </div>
+
+</div>
+
+</body>
+</html>
